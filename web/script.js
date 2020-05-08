@@ -1,7 +1,7 @@
 const anchorNode = (link, name, current_link) => {
     const anchor = document.createElement('a');
     anchor.href = link;
-    anchor.innerText = name;
+    anchor.textContent = name;
     if (current_link === true) {
         anchor.classList.add('current_link');
     }
@@ -21,15 +21,15 @@ const articleNode = (article) => {
     anchor.appendChild(content);
 
     const date = document.createElement('p');
-    date.innerText = new Date(article.publishedAt).toUTCString();
+    date.textContent = new Date(article.publishedAt).toUTCString();
     content.appendChild(date);
 
     const title = document.createElement('h1');
-    title.innerText = article.title;
+    title.textContent = article.title;
     content.appendChild(title);
 
     const description = document.createElement('p');
-    description.innerText = article.description;
+    description.textContent = article.description;
     content.appendChild(description);
 
     return anchor;
@@ -47,21 +47,21 @@ const mainArticleNode = (article) => {
     art.appendChild(cont);
 
     const date = document.createElement('p');
-    date.innerText = new Date(article.publishedAt).toUTCString();
+    date.textContent = new Date(article.publishedAt).toUTCString();
     cont.appendChild(date);
 
     const title = document.createElement('h1');
-    title.innerText = article.title;
+    title.textContent = article.title;
     cont.appendChild(title);
 
     const description = document.createElement('h2');
-    description.innerText = article.description;
+    description.textContent = article.description;
     cont.appendChild(description);
 
     Array.from(article.content.split('. ')).forEach(
         (p) => {
             const para = document.createElement('p');
-            para.innerText = p;
+            para.textContent = p;
             cont.appendChild(para);
         }
     )
