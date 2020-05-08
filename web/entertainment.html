@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <nav id="navbar">
+    </nav>
+    <main id="articles-container">
+    </main>
+    <script>
+        window.onload = () => {
+            const articles = [{
+                "source": {
+                    "id": null,
+                    "name": "Click.ro"
+                },
+                "author": null,
+                "title": "EXCLUSIV Gina Pistol: \"Smiley nu ar merge cu mine într-un reality-show. E comod, nu s-ar aventura\" - Click!",
+                "description": "Una dintre cele mai îndrăgite prezentatoare de la noi, gazda unor show-uri precum \"Asia Express\" și \"Chefi la cuțite\", de la Antena 1, are o mulțime de pasiuni în plină pandemie. Gina Pistol i-a povestit lui Virgil Ianțu, la interviurile \"Smart Talk\", printre…",
+                "url": "https://www.click.ro/vedete/romanesti/exclusiv-gina-pistol-smiley-nu-ar-merge-cu-mine-intr-un-reality-show-e-comod-nu-s",
+                "urlToImage": "https://www.click.ro/sites/default/files/medias/2020/05/07/gina-si-smiley.jpg",
+                "publishedAt": "2020-05-07T19:19:00Z",
+                "content": "Chiar dac în ultima vreme a devenit Gina Gospodina în izolare, pentru c-i gtete lui Smiley, vedeta Antenei 1, Gina Pistol (38 ani), are i alte pasiuni, pe care muli nu le tiu. Ei bine, aflai c Gina Pistol a luat lecii de canto la coala Crinei Mardare i are o … [+2733 chars]"
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Playtech.ro"
+                },
+                "author": null,
+                "title": "Cum am învățat sa folosesc Netflix mai inteligent și cum o poți face și tu - Playtech",
+                "description": "Dacă încă nu te descurci pe Netflix și ai nevoie de informații în plus, ai în continuare tot ce trebuie să știi ca să vezi cum trebuie filme și seriale.",
+                "url": "https://playtech.ro/2020/trucuri-netflix-platforma/",
+                "urlToImage": "https://static.playtech.ro/wp-content/uploads/2019/11/Razboiul-din-zona-de-streaming-video-800x533.jpg",
+                "publishedAt": "2020-05-07T14:28:35Z",
+                "content": "Dac înc nu te descurci pe Netflix i ai nevoie de informaii în plus, ai în continuare tot ce trebuie s tii ca s vezi cum trebuie filme i seriale.\r\nPlatforma are destul de multe funcionaliti, aa c e posibil s nu le tii chiar pe toate. Vom trece peste lucrurile … [+3115 chars]"
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Click.ro"
+                },
+                "author": null,
+                "title": "FOTO Ce fericiți sunt Laura Andreșan și Grasu XXL de când au devenit părinți! Micuța lor împlinește un an - Click!",
+                "description": "Ce mult s-a schimbat Laura Andreşan! Fosta bombă sexy, care în trecut cataloga bărbaţii după perfomanţele sexuale, s-a retras de câţiva ani din lumea pestriţă a showbiz-ului şi s-a axat pe relaţia pe care o are cu Grasu XXL, rapperul cu care formează un cuplu…",
+                "url": "https://www.click.ro/vedete/romanesti/foto-ce-fericiti-sunt-laura-andresan-si-grasu-xxl-de-cand-au-devenit-parinti-micuta",
+                "urlToImage": "https://www.click.ro/sites/default/files/medias/2020/05/07/laura-andresan-4.jpeg",
+                "publishedAt": "2020-05-07T14:20:00Z",
+                "content": "De la profa de amor, la mama perfect a fost doar un pas pentru Laura Andresan (38 de ani). Dup o relaie de zece ani cu rapperul Drago Nichifor (38 de ani), alias Grasu XXL, atena a devenit mmic anul trecut, în luna iunie. A avut o sarcin extrem de grea, dar a… [+712 chars]"
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "A1.ro"
+                },
+                "author": null,
+                "title": "Adevărul despre relația dintre Maia Morgenstern și fostul soț, Claudiu Istodor: \"Relația este crudă. Am ajuns la conflicte!\" - Antena 1",
+                "description": "Serialul \"Sacrificiul\" i-a adus din nou împreună pe Maia Morgenstern și Claudiu Istodor, unii dintre cei mai iubiți actori ai României, motiv pentru care cei doi au dat câteva detalii despre relația lor.",
+                "url": "https://a1.ro/showbiz/vedete/adevarul-despre-relatia-dintre-maia-morgenstern-si-fostul-sot-claudiu-istodor-id988035.html",
+                "urlToImage": "https://img.digitalag.ro/?u=https%3A%2F%2Fa1.ro%2Fuploads%2Fmodules%2Fnews%2F0%2F2020%2F5%2F7%2F988035%2F158884725247f9b40c.jpg",
+                "publishedAt": "2020-05-07T11:12:09Z",
+                "content": "\"Nu am fost tot timpul în relaii bune, am avut evident i relaii proaste, rele. Am trecut printr-un divor, i asta e greu de dus, mai ales dup 14 ani de trit împreun, cu un copil de 13 ani. Iar desprirea nu se încheie chiar în momentul semnrii actelor, a separr… [+1088 chars]"
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Playtech.ro"
+                },
+                "author": "Năstase Mirabela",
+                "title": "Dezvăluiri neașteptate despre Alina Ceușan după Asia Express. S-a aflat chiar de la colegii de emisiune - Playtech",
+                "description": "Extrem de palpitant, al treilea sezon al emisiunii ”Asia Express” s-a terminat cu câștigarea marelui premiu de către Sorin Bontea și Răzvan Fodor.",
+                "url": "https://playtech.ro/stiri/dezvaluiri-neasteptate-despre-alina-ceusan-dupa-asia-express-s-a-aflat-chiar-de-la-colegii-de-emisiune-121491",
+                "urlToImage": "https://static.playtech.ro/stiri/wp-content/uploads/2020/05/alina-ceusan.jpg",
+                "publishedAt": "2020-05-07T10:37:20Z",
+                "content": "Extrem de palpitant, al treilea sezon al emisiunii Asia Express s-a terminat cu câtigarea marelui premiu de ctre Sorin Bontea i Rzvan Fodor.\r\nDezvluiri neateptate despre Alina Ceuan dup Asia Express. S-a aflat chiar de la colegii de emisiune\r\nDup ce filmrile … [+1428 chars]"
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Kanald.ro"
+                },
+                "author": "D.I.",
+                "title": "Yilmaz, pe cale sa descopere adevarul despre micutul Adnan! - Kanal D Romania",
+                "description": "",
+                "url": "https://www.kanald.ro/yilmaz-pe-cale-sa-descopere-adevarul-despre-micutul-adnan-scrisoarea-trimisa-de-zuleyha-ajunge-in-mainile-lui-yilmaz-afla-ce-se-va-intampla-astazi-intr-un-nou-episod-din-serialul-ma-numesc-zuleyha-de-la-ora-20-00-la-kanal-d-20081032",
+                "urlToImage": "https://cdn.knd.ro/media/521/2862/577/20081032/1/0yilmaz940494--crop-1588844268.jpg?width=1200&height=630",
+                "publishedAt": "2020-05-07T09:39:00Z",
+                "content": null
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Impact.ro"
+                },
+                "author": "Redacția IMPACT",
+                "title": "Andreea Bălan, poze deocheate pe internet. Cum a reacționat George Burcea în plin scandal de divorț - IMPACT",
+                "description": "Andreea Bălan face furori în mediul online, în plin scandal de divorț. Vedeta a generat o serie de noi controverse și a fost aspru criticată de către anumiți fani. Cu câteva zile în urmă, solista a anunțat că este hotărâtă să pună capăt mariajului ei cu Georg…",
+                "url": "https://www.impact.ro/andreea-balan-poze-deocheate-pe-internet-cum-a-reactionat-george-burcea-in-plin-scandal-de-divort-39700.html",
+                "urlToImage": "https://www.impact.ro/wp-content/uploads/2020/05/Andreea-Bălan-poze-deocheate-pe-internet.-Cum-a-reacționat-George-Burcea-în-plin-scandal-de-divorț.jpg",
+                "publishedAt": "2020-05-07T09:28:42Z",
+                "content": "Andreea Blan face furori în mediul online, în plin scandal de divor. Vedeta a generat o serie de noi controverse i a fost aspru criticat de ctre anumii fani. Cu câteva zile în urm, solista a anunat c este hotrât s pun capt mariajului ei cu George Burcea i va … [+2147 chars]"
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Playtech.ro"
+                },
+                "author": "Iancu Andreea",
+                "title": "Drama cutremurătoare a Mirabelei Dauer. ”Eu nu o consider mama mea, ci o cântâreață care are să-mi dea bani” - Playtech",
+                "description": "Mirabela Dauer este artista pe al cărei chip ai putut observa mereu un zâmbet larg. Cântecele sale aduc bucurie la fiecare concert, în ciuda tristeții care se ascunde în sufletul artistei. Mirabela pare să poarte cu ea o poveste tristă și dureroasă.",
+                "url": "https://playtech.ro/stiri/drama-cutremuratoare-a-mirabelei-dauer-eu-nu-o-consider-mama-mea-ci-o-cantareata-care-are-sa-mi-dea-bani-121332",
+                "urlToImage": "https://static.playtech.ro/stiri/wp-content/uploads/2020/05/Drama-cutremurătoare-a-Mirabelei-Dauer.-”Eu-nu-o-consider-mama-mea-ci-o-cântâreață-care-are-să-mi-dea-bani”-4.jpg",
+                "publishedAt": "2020-05-07T08:17:13Z",
+                "content": "Mirabela Dauer este artista pe al crei chip ai putut observa mereu un zâmbet larg. Cântecele sale aduc bucurie la fiecare concert, în ciuda tristeii care se ascunde în sufletul artistei. Mirabela pare s poarte cu ea o poveste trist i dureroas.\r\nCu siguran sun… [+2091 chars]"
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Digi24.ro"
+                },
+                "author": "Digi24",
+                "title": "A murit Florian Schneider, cofondator al formației Kraftwerk și pionier al muzicii electronice - Digi24",
+                "description": "Cofondatorul grupului pionier al muzicii electronice Kraftwerk, germanul Florian Schneider-Esleben, a murit la vârsta de 73 de ani în urma unui cancer, a confirmat miercuri pentru AFP unul dintre managerii grupului, potrivit Agerpres.",
+                "url": "https://www.digi24.ro/magazin/timp-liber/cultura/a-murit-florian-schneider-cofondator-al-formatiei-kraftwerk-si-pionier-al-muzicii-electronice-1303247",
+                "urlToImage": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTA2dHJhbnNjb2Rlci5yY3Mt/cmRzLnJvJTJGc3RvcmFnZSUyRjIwMjAl/MkYwNSUyRjA3JTJGMTE4MzEzNV8xMTgz/MTM1X3Byb2ZpbWVkaWEtRmxvcmlhbi1T/Y2huZWlkZXIta3JhZnR3ZXJrLmpwZyZ3/PTY0MCZoPTQ4MCZ6Yz0xJmhhc2g9MzBl/YTcyYzExNDkwNDg1NjVmYzUxMThhN2U3MDJkYzc=.thumb.jpg",
+                "publishedAt": "2020-05-07T06:48:00Z",
+                "content": "Cofondatorul grupului pionier al muzicii electronice Kraftwerk, germanul Florian Schneider-Esleben, a murit la vârsta de 73 de ani în urma unui cancer, a confirmat miercuri pentru AFP unul dintre managerii grupului, potrivit Agerpres.\r\n\"Florian Schneider a mu… [+2775 chars]"
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Evz.ro"
+                },
+                "author": "Catalin Pena",
+                "title": "De câte ori a încercat să se sinucidă Lady Di | Evenimentul Zilei - EVENIMENTUL ZILEI",
+                "description": "Potrivit The Sun, acesta va folosi imagini nedifuzate din discursurile Dianei filmate înainte de moartea prințesei de Wales în 1997, precum și interviuri cu persoane care au fost aproape de ea, pentru",
+                "url": "https://evz.ro/de-cate-ori-a-incercat-sa-se-sinucida-lady-di.html",
+                "urlToImage": "https://evz.ro/wp-content/uploads/2020/05/diana.jpg",
+                "publishedAt": "2020-05-07T06:39:22Z",
+                "content": "Potrivit The Sun, acesta va folosi imagini nedifuzate din discursurile Dianei filmate înainte de moartea prinesei de Wales în 1997, precum i interviuri cu persoane care au fost aproape de ea, pentru a arunca lumin asupra tulburrilor sale interioare cu puin ti… [+284 chars]"
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Evz.ro"
+                },
+                "author": "Daniel Spasov",
+                "title": "Conchita Wurst, transformare radicală! Cum arată acum vedeta de la Eurovision FOTO - EVENIMENTUL ZILEI",
+                "description": "În 2014, Conchita Wurst (31 de ani) a făcut furori în întreaga lume cu look-ul său în cadrul concursului Eurovision, competiție pe care a câștigat-o în acel an reprezentând Austria. Acum, austriacul a",
+                "url": "https://evz.ro/conchita-wurst-transformare-radicala-cum-arata-acum-controversatul-personaj-de-la-eurovision-foto.html",
+                "urlToImage": "https://evz.ro/wp-content/uploads/2015/05/eurovision-2015-transexualul-conchita-wurst-va-fi-vocea-metroulu.jpg",
+                "publishedAt": "2020-05-07T04:56:13Z",
+                "content": "În 2014, Conchita Wurst (31 de ani) a fcut furori în întreaga lume cu look-ul su în cadrul concursului Eurovision, competiie pe care a câtigat-o în acel an reprezentând Austria.\r\nAcum, austriacul a revenit la look-ul masculin, a renunat la machiajul strident … [+480 chars]"
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Superbebe.ro"
+                },
+                "author": null,
+                "title": "Horoscopul zilei: 7 mai 2020 - SuperBEBE.ro",
+                "description": "Berbec S-ar putea sa fii in fata unei provocari interesante, iar astrele sustin ca va rezultatele vor fi cu atat mai bune, cu cat vei reusi sa atragi mai multe persoane care sa te sustina, sa fie de partea ta si mai ales, care sa aiba aceleasi obiective. La c…",
+                "url": "https://superbebe.ro/lifestyle/horoscopul-zilei-7-mai-2020/",
+                "urlToImage": "https://superbebe.ro/wp-content/uploads/2020/03/featured-horoscop-bun1-2.jpg",
+                "publishedAt": "2020-05-07T04:56:09Z",
+                "content": "Berbec\r\nS-ar putea sa fii in fata unei provocari interesante, iar astrele sustin ca va rezultatele vor fi cu atat mai bune, cu cat vei reusi sa atragi mai multe persoane care sa te sustina, sa fie de partea ta si mai ales, care sa aiba aceleasi obiective. La … [+4851 chars]"
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Evz.ro"
+                },
+                "author": "Georgeta Petrovici",
+                "title": "Incredibil! La ce a renunțat prințul Harry pentru ai face pe plac soției sale - EVENIMENTUL ZILEI",
+                "description": "Armele au fost achiziționate de un vânător pasionat, tranzacția fiind una privată, acum cinci luni, înainte ca ducii de Sussex să renunțe la Marea Britanie pentru Canada și ulterior să se mute în SUA,",
+                "url": "https://evz.ro/incredibil-la-ce-a-renuntat-printul-harry-pentru-a-i-face-pe-plac-sotiei-sale.html",
+                "urlToImage": "https://evz.ro/wp-content/uploads/2020/05/Prince_Harry_pictured_in_January_2005_with_a_dead_water_buffalo_-m-63_1588723447826.jpg",
+                "publishedAt": "2020-05-06T20:49:35Z",
+                "content": "Armele au fost achiziionate de un vântor pasionat, tranzacia fiind una privat, acum cinci luni, înainte ca ducii de Sussex s renune la Marea Britanie pentru Canada i ulterior s se mute în SUA, relateaz The Sun. Un prieten al cumprtorului anonim a relatat c ac… [+2141 chars]"
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Dcnews.ro"
+                },
+                "author": "Ema Apostu",
+                "title": "Care este, de fapt, numele complet al lui Bendeac. Așa e trecut în buletin. Surpriză totală! - DCNews",
+                "description": "Mihai Bendeac a spus care este, de fapt, numele lui complet. Nu știe toată lumea. Așa este trecut în buletin!",
+                "url": "https://www.dcnews.ro/care-este-de-fapt-numele-complet-al-lui-bendeac-asa-este-trecut-in-buletin-surpriza-totala_747072.html",
+                "urlToImage": "https://media.dcnews.ro/image/202005/w460/mihai-bendeac_39524900.jpg",
+                "publishedAt": "2020-05-06T20:44:51Z",
+                "content": "Mihai Bendeac a spus care este, de fapt, numele lui complet. Nu tie toat lumea. Aa este trecut în buletin!Dup ce Micutzu i-a \"ghicit\" al doilea prenume - Valentin - Mihai Bendeac l-a provocat pentru cel de-al treilea pe care îl poart. Surpriz total!\r\n\"Cum m c… [+340 chars]"
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Evz.ro"
+                },
+                "author": "Lucian Ionescu",
+                "title": "Izolarea le-a distrus căsnicia. Anda Adam divorțează? Detalii incredibile - EVENIMENTUL ZILEI",
+                "description": "Vedeta a renunțat să poarte verigheta de căsătorie. În ultimele fotografii, postate în aceste săptămâni, cântăreața se arată fără urmă de inel pe degetul mâinii stângi. Mai mult, atât ea cât și Sorin",
+                "url": "https://evz.ro/izolarea-le-a-distrus-casnicia-anda-adam-divorteaza-detalii-incredibile.html",
+                "urlToImage": "https://evz.ro/wp-content/uploads/2020/05/61677888.jpg",
+                "publishedAt": "2020-05-06T17:48:35Z",
+                "content": "Vedeta a renunat s poarte verigheta de cstorie. În ultimele fotografii, postate în aceste sptmâni, cântreaa se arat fr urm de inel pe degetul mâinii stângi. Mai mult, atât ea cât i Sorin nu se mai urmresc pe reelele de socializare. Vedeta nici mcar nu a mai p… [+660 chars]"
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Substantial.ro"
+                },
+                "author": "Mihaela Stanciu",
+                "title": "Lavinia Pârva a încins internetul cu cea mai sexy fotografie! A renunțat la inhibiții! Ce va spune Ștefan Bănică? - Substantial",
+                "description": "Lavinia Pâva a șocat internetul cu fotografia sexy pe care a postat-o. Vedeta a renunțat la inhibiții și s-a lăsat fotografiată în cele mai incendiare",
+                "url": "https://substantial.ro/lavinia-parva-a-incins-internetul-cu-cea-mai-sexy-fotografie-a-renuntat-la-inhibitii-ce-va-spune-stefan-banica/",
+                "urlToImage": "https://substantial.ro/wp-content/uploads/2020/05/lavinia2jpg-1.jpg",
+                "publishedAt": "2020-05-06T17:39:27Z",
+                "content": "Lavinia Pâva a ocat internetul cu fotografia sexy pe care a postat-o. Vedeta a renunat la inhibiii i s-a lsat fotografiat în cele mai incendiare ipostaze. Fanii au rmas masc. Oare ce va spune tefan Bnic?\r\nCântreaa Lavinia Pârva face furori când urc pe scen…da… [+882 chars]"
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Viva.ro"
+                },
+                "author": null,
+                "title": "În sfârșit! Sore a postat o fotografie cu tatăl copilui ei: „Arată perfect pentru mine”. De - Revista VIVA!",
+                "description": "Sore nu postează deloc fotografii cu partenerul ei de viață. Acum, în sfârșit s-a decis să pună o imagine cu el!",
+                "url": "https://www.viva.ro/galerie-foto/in-sfarsit-sore-a-postat-o-fotografie-cu-partenerul-ei-arata-perfect-pentru-mine-2547584",
+                "urlToImage": "https://www.viva.ro/wp-content/uploads/2020/05/Sore-2.jpg",
+                "publishedAt": "2020-05-06T16:30:18Z",
+                "content": "Sore ine foarte mult la intimitate i ne-am obinuit cu toii s admirm numai fotografii cu ea i fetia sa în prim-plan. A fost întrebat în repetate rânduri despre care este relaia sa cu tatl fiicei sale, îns a clarificat doar c este fericit dup 6 ani de relaie cu… [+1337 chars]"
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Huff.ro"
+                },
+                "author": "Andreea Oprea",
+                "title": "Horoscop zilnic 7 mai 2020. Unele zodii vor avea parte de reușite mari - HUFF",
+                "description": "Previziuni pentru toate zodiile marți. Horoscop zilnic 7 mai complet pentru zodia ta. Află de aici dacă astrele sunt de partea ta și vezi ce ți-au",
+                "url": "https://huff.ro/stiri/horoscop-zilnic-7-mai-2020-unele-zodii-vor-avea-parte-de-reusite-mari-210069",
+                "urlToImage": "https://huff.ro/wp-content/uploads/2020/05/zodii-1.jpg",
+                "publishedAt": "2020-05-06T15:43:34Z",
+                "content": "Previziuni pentru toate zodiile mari. Horoscop zilnic 7 mai complet pentru zodia ta. Afl de aici dac astrele sunt de partea ta i vezi ce i-au pregtit în aceast zi de joi, dar i ce trebuie s faci pentru a depi momentele neplcute.\r\nBerbec\r\nTe afli într-un momen… [+5054 chars]"
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Www.gsp.ro"
+                },
+                "author": "Gazeta Sporturilor",
+                "title": "Cântăreața Adele, protagonista unei schimbări uluitoare! Cum arată la 32 de ani, după ce a slăbit aproape 50 - Gazeta Sporturilor",
+                "description": "Cântăreața Adele și-a uimit fanii după ce a postat o fotografie cu ocazia aniversării a 32 de ani: aceasta a pierdut aproape 50 de kilograme, afișând o siluetă suplă",
+                "url": "https://www.gsp.ro/gsp-special/stiri-extrasport/cantareata-adele-protagonista-unei-schimbari-uluitoare-cum-arata-dupa-ce-a-slabit-aproape-50-de-kilograme-597988.html",
+                "urlToImage": "https://cacheimg.gsp.ro/autocrop/smp-images-production/gsp.ro/06052020/1588777095792.jpg?width=600&height=315",
+                "publishedAt": "2020-05-06T14:35:46Z",
+                "content": "În textul asociat fotografiei, Adele a inut s le mulumeasc persoanelor care se lupt cu pandemia de COVID-19 în prezent. V mulumesc pentru afeciunea pe care mi-ai artat-o de ziua mea de natere. Sper c rmânei în siguran în aceast perioad nebun. A vrea s le mulu… [+1115 chars]"
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "Impact.ro"
+                },
+                "author": "Diana Radu",
+                "title": "Jador, de la Puterea Dragostei, va participa la Asia Express? Anunțul a fost făcut chiar de artist - IMPACT",
+                "description": "Jador, fostul concurent de la Puterea Dragostei le-a dezvăluit fanilor săi de pe Instagram că s-ar putea să participe la emisiunea, Asia Express, de pe Antena 1. Fanii sunt înnebuniți de această posibilitate și abia așteaptă să-l revadă pe acesta pe micile ec…",
+                "url": "https://www.impact.ro/jador-de-la-puterea-dragostei-va-participa-la-asia-express-anuntul-a-fost-facut-chiar-de-artist-39553.html",
+                "urlToImage": "https://www.impact.ro/wp-content/uploads/2020/05/jador-2.jpg",
+                "publishedAt": "2020-05-06T13:59:38Z",
+                "content": "Jador, fostul concurent de la Puterea Dragostei le-a dezvluit fanilor si de pe Instagram c s-ar putea s participe la emisiunea, Asia Express, de pe Antena 1. Fanii sunt înnebunii de aceast posibilitate i abia ateapt s-l revad pe acesta pe micile ecrane.\r\nJado… [+1427 chars]"
+            }
+            ];
+            const categories = [
+                { 'name': 'Home', 'link': 'index.html', 'current_link': false },
+                { 'name': 'Business', 'link': 'business.html', 'current_link': false },
+                { 'name': 'Entertainment', 'link': 'entertainment.html', 'current_link': true },
+                { 'name': 'Health', 'link': 'health.html', 'current_link': false },
+                { 'name': 'Science', 'link': 'science.html', 'current_link': false },
+                { 'name': 'Sports', 'link': 'sports.html', 'current_link': false },
+                { 'name': 'Technology', 'link': 'technology.html', 'current_link': false },
+            ];
+            populateCategories(categories);
+            populateArticles(articles);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <nav id="navbar">
+    </nav>
+    <main id="main">
+    </main>
+    <script>
+        window.onload = () => {
+            const article =
+            {
+                "source": {
+                    "id": null,
+                    "name": "Promotor.ro"
+                },
+                "author": null,
+                "title": "Alpina lansează D3 S. Un diesel conceput pentru Autobahn – GALERIE FOTO - ProMotor",
+                "description": "În urma debutului modelului pe benzină B3 la sfârșitul anului trecut, Alpina Automobile a prezentat acum modelul diesel D3 S.",
+                "url": "https://www.promotor.ro/stiri-auto/alpina-lanseaza-d3-s-un-diesel-conceput-pentru-autobahn-galerie-foto-18684200",
+                "urlToImage": "https://www.promotor.ro/wp-content/uploads/2020/05/2021-Alpina-D3-S-Touring-1-1.jpg",
+                "publishedAt": "2020-05-06T07:33:15Z",
+                "content": "Disponibil atât în stiluri de caroserie sedan, cât și break, Alpina D3 S ar trebui, cel puțin teoretic, să devină cel mai apropiat model de BMW M3 pe motorină. Motorul său turbo de 3,0 litri, diesel în șase cilindri livrează 355 CP la 4.000-4.200 rpm. Cu 15 CP mai mult decât modelul stoc BMW M340d pe care se bazează Alpina D3 S. Când vine vorba de cuplul maxim, D3 S declanșează un 730 Nm între 1.750 rpm și 2.750 rpm – cu 30 Nm mai mult decât M340d. Pentru prima dată la un BMW Alpina, D3 S oferă o tehnologie mild-hybrid, care oferă un impuls electric de până la 11 CP, în special în intervalul de viteză mai scăzută, în același timp maximizând eficiența. Motorul este asociat unei transmisii ZF Sport-Automatic cu opt trepte și un sistem AWD xDrive care distribuie cuplul în funcție de situație între puntea față și spate. Alpina a efectuat ajustări specifice la sistemul AWD pentru a asigura distribuția cuplului predominant spre roțile din spate. Când vine vorba de performanță, berlinele Alpina D3 S pot sprinta de la 0 la 100 km / h în 4,6 secunde (4,8 secunde pentru Touring) și este capabil să atingă o viteză maximă de 273 km / h (270 km / h pentru modelul Touring). Alpina D3 S este proiectat în principal pentru șosea (în special Autobahn) și nu pentru circuit. Noul Alpina D3 S Sedan este acum disponibil pentru comandă, în Germania, de la un preț de 70.500 EUR, în timp ce modelul Turing începe de la 71.900 de euro. Ambele prețuri includ TVA. Livrările vor începe din noiembrie 2020."
+            };
+            const categories = [
+                { 'name': 'Home', 'link': 'index.html', 'current_link': true },
+                { 'name': 'Business', 'link': 'business.html', 'current_link': false },
+                { 'name': 'Entertainment', 'link': 'entertainment.html', 'current_link': false },
+                { 'name': 'Health', 'link': 'health.html', 'current_link': false },
+                { 'name': 'Science', 'link': 'science.html', 'current_link': false },
+                { 'name': 'Sports', 'link': 'sports.html', 'current_link': false },
+                { 'name': 'Technology', 'link': 'technology.html', 'current_link': false },
+            ];
+            populateCategories(categories);
+            populateMainArticle(article);
+        }
+    </script>
+</body>
+
+</html>

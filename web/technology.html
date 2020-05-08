@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <nav id="navbar">
+    </nav>
+    <main id="articles-container">
+    </main>
+    <script>
+        window.onload = () => {
+            const articles = [
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Wasd.ro"
+                    },
+                    "author": "Ghibirdic Ciprian",
+                    "title": "Tot ce sa prezentat la Inside Xbox - WASD.ro",
+                    "description": "La Inside Xbox au fost prezentate 13 titluri care vor ajunge pe Xbox Series X. Daca le cumparati pe Xbox One, veti primi upgrade gratuit pe Xbox Series X.",
+                    "url": "https://wasd.ro/news/tot-ce-s-a-prezentat-la-inside-xbox/",
+                    "urlToImage": "https://static.wasd.ro/wp-content/uploads/2020/05/Inside-Xbox.jpg",
+                    "publishedAt": "2020-05-07T21:59:00Z",
+                    "content": "Skip to content\r\nLa stream-ul de azi Inside Xbox au fost prezentate 13 titluri care vor ajunge pe Xbox Series X, printre care Assassin's Creed Valhalla. Toate acestea au fost optimizate special pentru noua consola. 10 din 13 titluri vor beneficia de Smart Del… [+3968 chars]"
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Gadget.ro"
+                    },
+                    "author": null,
+                    "title": "MediaTek Dimensity 1000+ este cel mai puternic procesor al producătorului taiwanez - Gadget.ro",
+                    "description": "MediaTek a anunţat o versiune uşor upgradată a procesorului MediaTek Dimensity 1000. Cum diferenţele dintre cele două procesoare nu sunt majore, producătorul taiwanez a ales un nume simplu pentru n…",
+                    "url": "https://gadget.ro/mediatek-dimensity-1000-este-cel-mai-puternic-procesor-al-producatorului-taiwanez/",
+                    "urlToImage": "https://gadget.ro/wp-content/uploads/2020/05/MediaTek-Dimensity-10002.jpg",
+                    "publishedAt": "2020-05-07T19:30:18Z",
+                    "content": "Hardware\r\nMediaTek a anunat o versiune uor upgradat a procesorului MediaTek Dimensity 1000. Cum diferenele dintre cele dou procesoare nu sunt majore, productorul taiwanez a ales un nume simplu pentru noul procesor: MediaTek Dimensity 1000+ .\r\nCare sunt cele m… [+2125 chars]"
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Profit.ro"
+                    },
+                    "author": null,
+                    "title": "Vânzările de console de jocuri video Nintendo au depășit așteptările în contextul pandemiei - Profit.ro",
+                    "description": "Grupul japonez Nintendo Co Ltd și-a depășit așteptările privind vânzările de console de jocuri video Switch, ca urmare a cererii solide pentru jocuri și divertisment în condițiile în care oamenii au petrecut mai mult timp acasă în timpul pandemiei de Covid-19…",
+                    "url": "https://www.profit.ro/bloomberg/vanzarile-de-console-de-jocuri-video-nintendo-au-depasit-asteptarile-in-contextul-pandemiei-19354833",
+                    "urlToImage": "https://i0.1616.ro/media/2/2621/37846/19354833/1/nintendoswitch-hardware-0.jpg?width=1200",
+                    "publishedAt": "2020-05-07T16:02:26Z",
+                    "content": "Grupul japonez Nintendo Co Ltd i-a depit ateptrile privind vânzrile de console de jocuri video Switch, ca urmare a cererii solide pentru jocuri i divertisment în condiiile în care oamenii au petrecut mai mult timp acas în timpul pandemiei de Covid-19, transmi… [+1159 chars]"
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Mobilissimo.ro"
+                    },
+                    "author": "https://www.facebook.com/mobilissimo",
+                    "title": "LG Velvet a debutat oficial: telefon fashion cu CPU Snapdragon 765G, 5G, preţ de aproape 3.300 lei - Mobilissimo.ro",
+                    "description": "După foarte multe teasere şi scăpări, fashion phone-ul celor de la LG este în sfârşit oficial. LG Velvet a fost prezentat astăzi în Coreea de Sud, unde costă 735 de dolari, adică aproximativ 3.300 lei. Începând de pe 8 mai",
+                    "url": "https://www.mobilissimo.ro/stiri-telefoane/lg-velvet-a-debutat-oficial",
+                    "urlToImage": "https://images2.mobilissimo.ro/Z2k/5eb428b44007e.jpg",
+                    "publishedAt": "2020-05-07T15:34:45Z",
+                    "content": "Dup foarte multe teasere i scpri, fashion phone-ul celor de la LG este în sfârit oficial. LG Velvet a fost prezentat astzi în Coreea de Sud, unde cost 735 de dolari, adic aproximativ 3.300 lei. Începând de pe 8 mai, adic mâine doritorii din Coreea de Sud vor … [+1542 chars]"
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Romaniatv.net"
+                    },
+                    "author": "",
+                    "title": "ZIUA PAMANTULUI: 22 APRILIE, ziua pe care ar trebui să o celebreze toţi oamenii VIDEO - RomaniaTV.net",
+                    "description": "ZIUA PAMANTULUI 2016: &Icirc;n fiecare an, pe 22 aprilie se sărbătoreşte Ziua Păm&acirc;ntului/ Earth Day, apărută &icirc;n Statele Unite ale Americii &icirc;ntr-o perioadă &icirc;n care a &icirc;nceput să se vorbească din ce &icirc;n ce mai",
+                    "url": "https://www.romaniatv.net/ziua-pamantului-google_288078.html",
+                    "urlToImage": "http://media.rtv.net/image/201604/full/earth_day_52135700.jpg",
+                    "publishedAt": "2020-05-07T15:03:27Z",
+                    "content": "ZIUA PAMANTULUI: În fiecare an, ziua de 22 aprilie se srbtorete Ziua Pmântului, ziua când s-a nscut micarea pentru protejarea mediului înconjurtor. Aceast micare s-a nscut în SUA într-o perioad când au avut loc mai multe evenimente deosebite, printre care înb… [+7082 chars]"
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Piataauto.md"
+                    },
+                    "author": null,
+                    "title": "Alfa Romeo lansează actualizări majore pentru bolizii de performanţă Giulia şi Stelvio Quadrifoglio - PiataAuto.md",
+                    "description": "Versiunile de serie Alfa Romeo Giulia şi Stelvio au beneficiat de actualizări de mijloc de carieră. Acum a venit rândul şi versiunilor de performanţă din gama italienilor, numite Quadrifoglio. Constructorul a adaptat modificări stilistice mai modeste, dar şi …",
+                    "url": "https://piataauto.md/Stiri/2020/05/Alfa-Romeo-lanseaza-actualizari-majore-pentru-bolizii-de-performanta-Giulia-si-Stelvio-Quadrifoglio/",
+                    "urlToImage": "https://piataauto.md/_i/newsmains/480/202005afurilmnpyuvjha.jpg",
+                    "publishedAt": "2020-05-07T14:06:16Z",
+                    "content": null
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Gadgetzone.ro"
+                    },
+                    "author": null,
+                    "title": "Noutăți în portofoliul Sonos: Arc, primul soundbar premium cu Dolby Atmos al companiei debutează oficial alături de Sub (Gen3) și boxa Sonos Five - GadgetZone.ro",
+                    "description": "Leak-urile din ultima vreme s-au dovedi a fi reale astfel că astăzi cei de la Sonos au anunțat noi produse audio din zona premium",
+                    "url": "https://www.gadgetzone.ro/noutati-in-portofoliul-sonos-arc-primul-soundbar-premium-cu-dolby-atmos-al-companiei-debuteaza-oficial-alaturi-de-sub-gen3-si-boxa-sonos-five/",
+                    "urlToImage": "https://www.gadgetzone.ro/wp-content/uploads/2020/05/SonosArcWithSubandRears.jpg",
+                    "publishedAt": "2020-05-07T12:26:47Z",
+                    "content": "Leak-urile din ultima vreme s-au dovedi a fi reale astfel c astzi cei de la Sonos au anunat noi produse audio din zona premium. Mai mult de atât trebuie s tii c am luat parte la un eveniment online de prezentare a acestor produse chiar de sptmâna trecut i am … [+3161 chars]"
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Noobz.ro"
+                    },
+                    "author": "Muche Ecaterina",
+                    "title": "Windows 10X vrea să devină competitor Chrome OS - noobz.ro",
+                    "description": "Windows 10X pare să devină competitor Chrome OS. Microsoft a confirmat că își repriorizează dezvoltarea Windows 10X pentru a se ... .",
+                    "url": "https://www.noobz.ro/2020/05/07/windows-10x-vrea-sa-devina-competitor-chrome-os/",
+                    "urlToImage": "https://www.noobz.ro/wp-content/uploads/2020/05/SurfaceNeo-3-scaled-e1588847298749.jpg",
+                    "publishedAt": "2020-05-07T10:32:17Z",
+                    "content": "Windows 10X vrea s devin competitor Chrome OS. Microsoft a confirmat c îi repriorizeaz dezvoltarea Windows 10X pentru a se concentra pe dispozitive obinuite cu un singur ecran. Varianta Windows a fost iniial destinat s funcioneze pe un nou hardware cu ecran d… [+5311 chars]"
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Forbes.ro"
+                    },
+                    "author": "Irina Pana",
+                    "title": "Ce trebuie să știți despre noua tabletă Huawei MatePad Pro și MatePad Pro LTE. Prețuri și specificații - Forbes Romania",
+                    "description": "Huawei Consumer Business Group (CBG) anunță disponibilitatea tabletei vârf de gamă Huawei MatePad Pro pe piața din România. Prețul de achiziționare recomandat pentru Huawei MatePad Pro Wi-Fi este de 2.499 lei, iar pentru modelul Huawei MatePad Pro LTE, 2.699 …",
+                    "url": "https://www.forbes.ro/ce-trebuie-sa-stiti-despre-noua-tableta-huawei-matepad-pro-si-matepad-pro-lte-preturi-si-specificatii-163984",
+                    "urlToImage": "https://www.forbes.ro/wp-content/uploads/2020/05/Huawei-MatePad-Pro_group-image.jpg",
+                    "publishedAt": "2020-05-07T09:37:42Z",
+                    "content": "Huawei Consumer Business Group (CBG) anun disponibilitatea tabletei vârf de gam Huawei MatePad Pro pe piaa din România. Preul de achiziionare recomandat pentru Huawei MatePad Pro Wi-Fi este de 2.499 lei, iar pentru modelul Huawei MatePad Pro LTE, 2.699 lei. V… [+8039 chars]"
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Mobilissimo.ro"
+                    },
+                    "author": "https://www.facebook.com/mobilissimo",
+                    "title": "Microsoft anunță tableta Surface Go 2; Ecran mai mare PixelSense, procesoare de nouă generație și autonomie îmbunătățită - Mobilissimo.ro",
+                    "description": "La mijloc de săptămână cei de la Microsoft au anunțat o serie de noi produse, printre acestea numărându-se căștile wireless on-ear Surface Headphones 2, dar și laptop-ul Surface Book 3. Un alt dispozitiv",
+                    "url": "https://www.mobilissimo.ro/stiri-tablete/microsoft-anunta-tableta-surface-go-2",
+                    "urlToImage": "https://images1.mobilissimo.ro/Z2k/5eb3cec26de3a.jpg",
+                    "publishedAt": "2020-05-07T08:50:02Z",
+                    "content": "La mijloc de sptmân cei de la Microsoft au anunat o serie de noi produse, printre acestea numrându-se ctile wireless on-ear Surface Headphones 2, dar i laptop-ul Surface Book 3. Un alt dispozitiv la fel de interesant este i Microsoft Surface Go 2 - succesorul… [+2213 chars]"
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Idevice.ro"
+                    },
+                    "author": "Adrian Gabor",
+                    "title": "Android: Decizia IMPORTANTA Anuntata Oficial de catre Google - iDevice.ro",
+                    "description": "https://www.youtube.com/watch?v=gqJEcy57hA8 Android este in centrul unei decizii radicale luate de catre compania Google pentru telefoanele din intreaga lume, iar asta are la baza inclusiv pandemia de Coronavirus prin care trecem cu totii. Mai exact, cei de l…",
+                    "url": "https://www.idevice.ro/2020/05/07/android-amanat-415917/",
+                    "urlToImage": "https://www.idevice.ro/wp-content/uploads/2020/05/Android-amanat.jpg",
+                    "publishedAt": "2020-05-07T06:37:17Z",
+                    "content": "Android este in centrul unei decizii radicale luate de catre compania Google pentru telefoanele din intreaga lume, iar asta are la baza inclusiv pandemia de Coronavirus prin care trecem cu totii. Mai exact, cei de la Google au luat decizia de a amana lansarea… [+1804 chars]"
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Idevice.ro"
+                    },
+                    "author": "Adrian Gabor",
+                    "title": "Samsung GALAXY S30: Marile Schimbari RADICALE pentru Telefon - iDevice.ro",
+                    "description": "Samsung GALAXY S30 este inca destul de departe de lansare, insa chiar si asa avem ocazia astazi de a afla primele detalii in legatura cu lansarea noului model de telefon care este pregatit de catre coreeni. Mai exact, astazi avem dezvaluite primele informatii…",
+                    "url": "https://www.idevice.ro/2020/05/07/samsung-galaxy-s30-camere-415892/",
+                    "urlToImage": "https://www.idevice.ro/wp-content/uploads/2020/05/Samsung-GALAXY-S30-camere.jpg",
+                    "publishedAt": "2020-05-07T04:49:47Z",
+                    "content": "Samsung GALAXY S30 este inca destul de departe de lansare, insa chiar si asa avem ocazia astazi de a afla primele detalii in legatura cu lansarea noului model de telefon care este pregatit de catre coreeni. Mai exact, astazi avem dezvaluite primele informatii… [+2185 chars]"
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Www.rfi.ro"
+                    },
+                    "author": "Cosmin Ruscior",
+                    "title": "Cum va arăta noua motocicletă Mobra? \"Designul va fi unul actual, dar va păstra linii din motocicleta veche\" - RFI ROMÂNIA",
+                    "description": "Un brand românesc celebru ar putea fi readus în curând la viaţă. Trei tineri, Dragoş Paise, Andrei Postelnicu şi Radu Gherasim, vor să repornească producţia de motociclete Mobra. Investiţia în designul şi asamblarea în România a noilor modele este estimată...",
+                    "url": "https://www.rfi.ro/societate-83322-cum-va-arata-noua-motocicleta-mobra-designul-va-fi-unul-actual-dar-va-pastra-linii",
+                    "urlToImage": "https://www.rfi.ro/sites/default/files/articol/cum_va_arata_noua_motocicleta_mobra_designul_unul_actual_dar_pastra_linii_motocicleta_veche.jpg",
+                    "publishedAt": "2020-05-07T00:29:00Z",
+                    "content": "Reporter: Ce reprezint marca Mobra pentru români?\r\nAndrei Postelnicu: Mobra era pentru România pe vremea comunismului motocicleta tuturor. S-au fcut poate sute de mii, milioane, a putea spune, de kilometri, în total, cu Mobrele care s-au vândut în ar, în excu… [+2827 chars]"
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Romaniatv.net"
+                    },
+                    "author": null,
+                    "title": "CAUCIUCURILE DE VARĂ: Când se schimbă ANVELOPELE DE IARNĂ fără să rişti amenzi - RomaniaTV.net",
+                    "description": "CAUCIUCURI DE VARA: Potrivit legislaţiei &icirc;n vigoare, anvelopele devin obligatorii &icirc;n condiţii meteo specifice. Mai exact, drumuri acoperite cu zăpadă, gheaţă sau polei. După ce, de frica amenzilor, şoferii s-au &icirc;nghesuit să",
+                    "url": "https://www.romaniatv.net/cauciucurile-de-vara-cand-se-schimba-anvelopele-de-iarna-fara-sa-risti-amenzi_274685.html",
+                    "urlToImage": "http://media.rtv.net/image/201602/full/vulcanizare01_52018200.jpg",
+                    "publishedAt": "2020-05-06T19:46:29Z",
+                    "content": "COD RUTIER: Cauciucurile  de iarna sunt obligatorii oricand se circula pe drumuri acoperite cu zapada, gheata sau polei, indiferent de data din calendar.\r\nUnii soferi sustin ca obligativitatea anvelopelor de iarna in conditiile in care temperaturile au fost c… [+2642 chars]"
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Gadget.ro"
+                    },
+                    "author": null,
+                    "title": "NFC a primit suport pentru încărcare wireless - Gadget.ro",
+                    "description": "NFC este cunoscut în special pentru faptul că prin intermediul său se realizează plățile cu smartphone-ul. Bineînțeles, tehnologia are și alte aplicații: conexiune rapidă între un smartphone și o b…",
+                    "url": "https://gadget.ro/nfc-a-primit-suport-pentru-incarcare-wireless/",
+                    "urlToImage": "https://gadget.ro/wp-content/uploads/2013/02/nfc-mobile-payments.jpg",
+                    "publishedAt": "2020-05-06T18:11:41Z",
+                    "content": "Accesorii inteligente\r\nNFC este cunoscut în special pentru faptul c prin intermediul su se realizeaz plile cu smartphone-ul. Bineîneles, tehnologia are i alte aplicaii: conexiune rapid între un smartphone i o box bluetooth etc. \r\nNFC Forum a aprobat o nou fun… [+1185 chars]"
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Romaniatv.net"
+                    },
+                    "author": null,
+                    "title": "Mihaela Rădulescu, IMAGINE cu MESAJ XXX pe Facebook: \"E mai bună decât frecatul mentei\" - RomaniaTV.net",
+                    "description": "Mihaela Rădulescu nu se dă &icirc;nlături niciodată de la face fotografii incitante, pe care mai apoi să le posteze pe conturile ei de socializare.",
+                    "url": "https://www.romaniatv.net/mihaela-radulescu-imagine-cu-mesaj-xxx-pe-facebook-e-mai-buna-decat-frecatul_250006.html",
+                    "urlToImage": "http://media.rtv.net/image/201509/full/4_97568200.jpg",
+                    "publishedAt": "2020-05-06T17:06:53Z",
+                    "content": "De curând, Mihaela Rdulescu i-a surprins prientenii virtuali cu o fotografie incitant, însoit de un mesaj i mai incitant.\r\nMai exact, vedeta a postat pe contul ei de Facebook o fotografie în care este surprins cum muc dintr-un microfon, într-un mod agresiv. A… [+443 chars]"
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Romaniatv.net"
+                    },
+                    "author": "",
+                    "title": "\"Omul-copac\" cu tumori pe mâini şi pe picioare va fi operat - RomaniaTV.net",
+                    "description": "Bărbatul din Bangladesh care se luptă de 10 ani cu negi imenşi cu aspect de scoarţă de copac pe m&acirc;ini şi pe picioare va fi operat.&nbsp;",
+                    "url": "https://www.romaniatv.net/omul-copac-cu-tumori-pe-maini-si-pe-picioare-va-fi-operat_271474.html",
+                    "urlToImage": "http://media.rtv.net/image/201602/full/omul_copac_68088100.jpg",
+                    "publishedAt": "2020-05-06T16:24:59Z",
+                    "content": "Abul Bajandar, un tat de familie de 26 de ani originar din districtul Khulna (sud) din Bangladesh, numit i \"Omul-copac\" din cauza excrescenelor care îi acoper mâinile i picioarele este în prezent supus unor analize în vederea operaiei de extirpare a acestora,… [+1152 chars]"
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Romaniatv.net"
+                    },
+                    "author": "",
+                    "title": "Cea mai spectaculoasă păcăleală a naturii. Cascada de foc din Parcul Yosemite VIDEO - RomaniaTV.net",
+                    "description": "Un efect vizual provocat de lumină la crepuscul transformă &icirc;ntr-o cascadă de foc o cădere de apă din Parcul Naţional Yosemite, din SUA.",
+                    "url": "https://www.romaniatv.net/cea-mai-spectaculoasa-pacaleala-a-naturii-cascada-de-foc-din-parcul-yosemite-video_275525.html",
+                    "urlToImage": "http://media.rtv.net/image/201602/full/cascada_05215000.jpg",
+                    "publishedAt": "2020-05-06T15:57:14Z",
+                    "content": "În perioada ultimelor dou sptmâni din luna februarie, atunci când soarele strlucete deasupra Vii Yosemite iar apa se scurge în josul peretelui montan de granit, are loc fenomenul cascadei luminoase.\r\nTransformarea apei în foc este îns doar o iluzie. Percepia … [+201 chars]"
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Romaniatv.net"
+                    },
+                    "author": "",
+                    "title": "Peste două tone de solzi de pangolin, confiscate la vamă. Mamiferul este pe cale de dispariţie - RomaniaTV.net",
+                    "description": "Autoritățile vamale thailandeze au confiscat 2,9 tone de solzi de pangolin, un mamifer amenințat cu dispariția, a căror valoare totală depășește 826.000 de dolari, au declarat joi oficialii, citați de DPA.",
+                    "url": "https://www.romaniatv.net/peste-doua-tone-de-solzi-de-pangolin-confiscate-la-vama-mamiferul-este-pe-cale-de-disparitie_338706.html",
+                    "urlToImage": "http://media.rtv.net/image/201702/full/aai_9441_1_50796500.jpg",
+                    "publishedAt": "2020-05-06T15:21:50Z",
+                    "content": "Pangolinul, singurul mamifer cu solzi i cel mai vânat animal din lume, este beneficiarul celui mai înalt grad de protecie împotriva traficului, în condiiile în care comerul internaional al tuturor speciilor de pangolin a fost interzis în luna septembrie a anu… [+1079 chars]"
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Romaniatv.net"
+                    },
+                    "author": "",
+                    "title": "Ministerul de Interne defilează pe Facebook cu cele mai frumoase angajate. Vezi cine a primit cele mai multe like-uri - RomaniaTV.net",
+                    "description": "Ministerul de Interne invită internauţii să aleagă cea mai frumoasă angajată care va fi coperta paginii Facebook a MAI şi va fi pe coperta ediţiei din martie a Revistei Pentru Patrie.",
+                    "url": "https://www.romaniatv.net/ministerul-de-interne-defileaza-pe-facebook-cu-cele-mai-frumoase-angajate-vezi-cine-a-primit-cele-mai-multe-like-uri_275639.html",
+                    "urlToImage": "http://media.rtv.net/image/201602/full/monica_niculescu_98985300.jpg",
+                    "publishedAt": "2020-05-06T15:11:34Z",
+                    "content": "Ministerul de Interne a lansat o campanie public, prin care vizitatorii paginii de Facebook a instituiei sunt invitai s o voteze pe cea mai frumoas reprezentant a MAI. Toate angajatele ministerului se pot înscrie în concurs pân la data de 27 februarie.\r\n\"Timp… [+958 chars]"
+                }
+            ];
+            const categories = [
+                { 'name': 'Home', 'link': 'index.html', 'current_link': false },
+                { 'name': 'Business', 'link': 'business.html', 'current_link': false },
+                { 'name': 'Entertainment', 'link': 'entertainment.html', 'current_link': false },
+                { 'name': 'Health', 'link': 'health.html', 'current_link': false },
+                { 'name': 'Science', 'link': 'science.html', 'current_link': false },
+                { 'name': 'Sports', 'link': 'sports.html', 'current_link': false },
+                { 'name': 'Technology', 'link': 'technology.html', 'current_link': true },
+            ];
+            populateCategories(categories);
+            populateArticles(articles);
+        }
+    </script>
+</body>
+
+</html>

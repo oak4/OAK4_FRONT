@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <nav id="navbar">
+    </nav>
+    <main id="articles-container">
+    </main>
+    <script>
+        window.onload = () => {
+            const articles = [
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Sport.ro"
+                    },
+                    "author": "Sport.ro",
+                    "title": "Gigi Becali si-a bagat \"perlele\" la REDUCERE! Patronul FCSB ia scazut pretul lui Coman si asteapta ploaia de OFERTE - Sport.ro",
+                    "description": "Florinel Coman poate reprezenta principala sursa de venit a FCSB in urmatoarea perioada.",
+                    "url": "https://www.sport.ro/liga-1/gigi-becali-si-a-bagat-perlele-la-reducere-patronul-fcsb-i-a-scazut-pretul-lui-coman-si-asteapta-ploaia.html",
+                    "urlToImage": "https://assets.sport.ro/assets/sport/2020/05/07/image_galleries/700157/gigi-becali-si-a-bagat-perlele-la-reducere-patronul-fcsb-i-a-scazut-pretul-lui-coman-si-asteapta-ploaia_size6.jpg",
+                    "publishedAt": "2020-05-07T20:29:17Z",
+                    "content": "Florinel Coman poate reprezenta principala sursa de venit a FCSB in urmatoarea perioada.\r\nGigi Becali a scazut pretul lui Florinel Coman pe aceasta vreme de criza si cere 10 milioane de euro plus 20% dintr-un viitor transfer. Dupa reducerea salariilor si dupa… [+1093 chars]"
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Www.gsp.ro"
+                    },
+                    "author": "Gazeta Sporturilor",
+                    "title": "Gică Popescu a răbufnit în emisiunea cu ministrul Ionuț Stroe: „Cine îmi plătește mie 300.000 de euro?” - Gazeta Sporturilor",
+                    "description": "Gică Popescu a avut o poziție fermă cu privire la startul antrenamentelor, în dialogul purtat cu ministrul Ionuț Stroe.",
+                    "url": "https://www.gsp.ro/fotbal/liga-1/gica-popescu-a-rabufnit-in-emisiunea-cu-ministrul-ionut-stroe-cine-imi-plateste-mie-300000-de-euro-598119.html",
+                    "urlToImage": "https://cacheimg.gsp.ro/autocrop/smp-images-production/gsp.ro/07052020/1588882361207.jpg?width=600&height=315",
+                    "publishedAt": "2020-05-07T19:58:06Z",
+                    "content": "Acetia au vorbit despre reluarea Ligii 1, iar Gic Popescu a avut o poziie ferm cu privire la startul antrenamentelor. Baciul, care ocup funcia de preedinte la clubul lui Gic Hagi, spune c o perioad îndelungat de cantonament n-ar fi o variant avantajoas din pu… [+1570 chars]"
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Digisport.ro"
+                    },
+                    "author": "Digi Sport",
+                    "title": "\"Habar n-am de discursul lui nea Imi, nu vorbea cu mine.\" Ce ar schimba steliştii la 34 de ani de la CCE 1986 - DigiSport",
+                    "description": "7 mai 1986 rămâne o dată de referinţă în istoria fotbalului românesc, iar eroii de atunci au amintiri care nu pot fi şterse vreodată.",
+                    "url": "https://www.digisport.ro/fotbal/habar-n-am-de-discursul-lui-nea-imi-nu-vorbea-cu-mine-ce-ar-schimba-stelistii-la-34-de-ani-de-la-cce-1986-834411",
+                    "urlToImage": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTAxdHJhbnNjb2Rlci5yY3Mt/cmRzLnJvJTJGc3RvcmFnZSUyRjIwMTkl/MkYwNiUyRjA3JTJGMTA4MjU3OV8xMDgy/NTc5X2R1Y2thZGFtLmpwZyZ3PTY0MCZo/PTQ4MCZ6Yz0xJmhhc2g9NzRhMmE0YmI4ZTI3ZTdlZDdmYzc0MGVkNWUzZDY5N2E=.thumb.jpg",
+                    "publishedAt": "2020-05-07T19:24:00Z",
+                    "content": "Întrebai ce ar schimba de la acel Steaua - Barcelona, Duckadam i Balintau dat rspunsuri haioase.\r\n\"Dac a schimba ceva, ar fi primele de joc. Le-a face un pic mai mari. În rest nu a vedea nimic. Noi jucam foarte bine atunci\", a spus Helmuth Duckadam la Fotbal … [+2052 chars]"
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Digisport.ro"
+                    },
+                    "author": "Digi Sport",
+                    "title": "Un sportiv care a jucat un meci întreg cu masca pe față explică prin ce a trecut: \"După câteva minute nu mai puteam respira\" - DigiSport",
+                    "description": "Tenismenul Benjamin Hassan (25 de ani) a disputat un meci de tenis, iar pe toată durata partidei a purtat pe față o mască de protecție.",
+                    "url": "https://www.digisport.ro/tenis/un-sportiv-care-a-jucat-un-meci-intreg-cu-masca-pe-fata-explica-prin-ce-a-trecut-dupa-cateva-minute-nu-mai-puteam-respira-834468",
+                    "urlToImage": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTAxdHJhbnNjb2Rlci5yY3Mt/cmRzLnJvJTJGc3RvcmFnZSUyRjIwMjAl/MkYwNSUyRjA3JTJGMTE4MzM3M18xMTgz/MzczX0dldHR5SW1hZ2VzLTEyMDgxNzY1/NTAuanBnJnc9NjQwJmg9NDgwJnpjPTEm/aGFzaD0wZGE1MzY1MjMxNzNmZTZjNzkyMjQyN2ZlYTA2OTQxYw==.thumb.jpg",
+                    "publishedAt": "2020-05-07T19:19:00Z",
+                    "content": "Sportivul a mrturisit c experiena a fost una extrem de neplcut i c nu se poate juca astfel într-un meci important:\r\n\"Am fost curios s vd cum este s joci un meci cu masca pe fa, dac pot face asta. Dup câteva minute, de-abia mai puteam respira. Cu masca pe fa e… [+925 chars]"
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Digisport.ro"
+                    },
+                    "author": "Digi Sport",
+                    "title": "Reacţia UEFA după ce Bundesliga revine pe stadioane: \"Un exemplu strălucit pentru toată lumea!\" - DigiSport",
+                    "description": "",
+                    "url": "https://www.digisport.ro/fotbal/bundesliga/reactia-uefa-dupa-ce-bundesliga-revine-pe-stadioane-un-exemplu-stralucit-pentru-toata-lumea-834448",
+                    "urlToImage": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTAxdHJhbnNjb2Rlci5yY3Mt/cmRzLnJvJTJGc3RvcmFnZSUyRjIwMjAl/MkYwNSUyRjA3JTJGMTE4MzM3MF8xMTgz/MzcwX0dldHR5SW1hZ2VzLTg4NDQ0MjIy/MC5qcGcmdz02NDAmaD00ODAmemM9MSZo/YXNoPWQ1YjNmYWEyOTYxNDZkZDI1MWUxMjZhYjBiMWJiMTYw.thumb.jpg",
+                    "publishedAt": "2020-05-07T18:55:00Z",
+                    "content": "i preedintele UEFA,  Aleksander Ceferin, a salutat restartul anunat de germani i sper ca exemplul lors fie urmat de alte ligi de pe continent. \r\n\"Este o veste fantastic aceea c autoritile din Germania au acceptat reluarea meciurilor din Bundesliga. Este un pa… [+2421 chars]"
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Digisport.ro"
+                    },
+                    "author": "Digi Sport",
+                    "title": "Cristiano Ronaldo, revoltat de o regulă dictată împotriva lui la United: \"Cine mai e și scoțianul ăsta? Ce e nebunia asta?\" - DigiSport",
+                    "description": "",
+                    "url": "https://www.digisport.ro/fotbal/premier-league/cristiano-ronaldo-revoltat-de-o-regula-dictata-impotriva-lui-la-united-cine-mai-e-si-scotianul-asta-ce-e-nebunia-asta-834414",
+                    "urlToImage": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTAxdHJhbnNjb2Rlci5yY3Mt/cmRzLnJvJTJGc3RvcmFnZSUyRjIwMjAl/MkYwNSUyRjA3JTJGMTE4MzM1OV8xMTgz/MzU5X0dldHR5SW1hZ2VzLTcxNjA2MjEw/LmpwZyZ3PTY0MCZoPTQ4MCZ6Yz0xJmhh/c2g9YjQxN2Q4NWVlYTk5M2E0NjI0MTk5ODlhY2RlNTE2ZGU=.thumb.jpg",
+                    "publishedAt": "2020-05-07T18:26:00Z",
+                    "content": "\"A avut o via grea în vestiar. Lui îi plcea s in prea mult mingea i secundul nostru a impus o regul care l-a dat peste cap pe portughez.\r\nWalter Smith a devenit secundul lui Ferguson i a decis s nu se dea lovituri libere la meciurile-coal. Dup dou sptmâni în … [+757 chars]"
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Playtech.ro"
+                    },
+                    "author": "Stan Nicu",
+                    "title": "Ceaușescu a încercat să o mărite pe Nadia Comăneci cu un fotbalist celebru. De-abia acum s-a aflat - Playtech",
+                    "description": "Securitatea lui Nicolae Ceaușescu și responsabilii cu propaganda ai Partidului Comunist au încercat să o mărite pe celebra sportivă Nadia Comăneci cu un fotbalist celebru de la noi.",
+                    "url": "https://playtech.ro/stiri/partidul-comunist-roman-a-incercat-sa-o-marite-pe-nadia-comaneci-cu-un-fotbalist-celebru-de-abia-acum-s-a-aflat-121831",
+                    "urlToImage": "https://static.playtech.ro/stiri/wp-content/uploads/2020/05/Ceausescu-Nadia-Comăneci.jpg",
+                    "publishedAt": "2020-05-07T18:21:38Z",
+                    "content": "Securitatea lui Nicolae Ceauescu i responsabilii cu propaganda ai Partidului Comunist au încercat s o mrite pe celebra sportiv Nadia Comneci cu un fotbalist celebru de la noi.\r\nPartidul Comunist Român a încercat s o mrite pe Nadia Comneci cu un fotbalist cele… [+2129 chars]"
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Digisport.ro"
+                    },
+                    "author": "Digi Sport",
+                    "title": "Bayern aduce un nume mare chiar înainte să se reia Bundesliga! \"A fost alegerea lui Hansi Flick,\" au spus şefii clubului - DigiSport",
+                    "description": "",
+                    "url": "https://www.digisport.ro/fotbal/bundesliga/bayern-aduce-un-nume-mare-chiar-inainte-sa-se-reia-bundesliga-a-fost-alegerea-lui-hansi-flick-au-spus-sefii-clubului-834351",
+                    "urlToImage": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTAxdHJhbnNjb2Rlci5yY3Mt/cmRzLnJvJTJGc3RvcmFnZSUyRjIwMjAl/MkYwNSUyRjA3JTJGMTE4MzMyOF8xMTgz/MzI4X0dldHR5SW1hZ2VzLTExNDYyNTQz/ODUuanBnJnc9NjQwJmg9NDgwJnpjPTEm/aGFzaD05NTdlNDRkMDBmMzAwOWUzYTRjZWUxZDU5NWQzZjM1OQ==.thumb.jpg",
+                    "publishedAt": "2020-05-07T18:03:00Z",
+                    "content": "Bavarezii l-au confirmat recentîn funcie pe Hansi Flick, cel care asigurase cu succes interimatul dup plecarea lui Niko Kovac. \r\n\"Eu i Hansi Flick ne cunoatem de mult vreme de la echipa naional. Pentru mine, este un pas i mportant în cariera de antrenor. Sper… [+2602 chars]"
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Www.gsp.ro"
+                    },
+                    "author": "Gazeta Sporturilor",
+                    "title": "Se „rupe” CFR Cluj, după monopolul Dan Petrescu? Ce declara Giedrius Arlauskis: „Fără el, nu mai continui nic - Gazeta Sporturilor",
+                    "description": "Expansiunea lui Dan Petrescu în club pare să fie din ce în ce mai deranjantă pentru oamenii din jurul său, care nu acceptă politica impusă de „Bursuc”, aceea ca toate deciziile să fie luate doar de el.",
+                    "url": "https://www.gsp.ro/fotbal/liga-1/se-rupe-cfr-cluj-giedrius-arlauskis-primul-jucator-care-a-anuntat-ca-pleaca-in-actualele-conditii-598107.html",
+                    "urlToImage": "https://cacheimg.gsp.ro/autocrop/smp-images-production/gsp.ro/07052020/1588873004433.jpg?width=600&height=315",
+                    "publishedAt": "2020-05-07T17:31:18Z",
+                    "content": "Expansiunea lui Dan Petrescu în club pare s fie din ce în ce mai deranjant pentru oamenii din jurul su, care nu accept politica impus de Bursuc, aceea ca toate deciziile s fie luate doar de el. \r\nMarian Copilu, un oficial prezent la mai toate succesele CFR-ul… [+1213 chars]"
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Digisport.ro"
+                    },
+                    "author": "Digi Sport",
+                    "title": "Emeric Ienei, poveste amuzantă din 1986: \"Eram pe autostradă: 'Sunt bucureșteni!' Am folosit niște cuvinte mai urâte\" - DigiSport",
+                    "description": "Emeric Ienei, antrenorul care a cucerit Cupa Campionilor Europeni alături de Steaua în 1986, a povestit care era atmosfera înainte de marea finală cu Barcelona în direct la Digi Sport Special.",
+                    "url": "https://www.digisport.ro/fotbal/emeric-ienei-poveste-amuzanta-din-1986-eram-pe-autostrada-sunt-bucuresteni-am-folosit-niste-cuvinte-mai-urate-834405",
+                    "urlToImage": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTAxdHJhbnNjb2Rlci5yY3Mt/cmRzLnJvJTJGc3RvcmFnZSUyRjIwMjAl/MkYwNCUyRjE4JTJGMTE3ODU1Ml8xMTc4/NTUyX2llbmVpLmpwZyZ3PTY0MCZoPTQ4/MCZ6Yz0xJmhhc2g9NjUzMDg0NTUwY2QxZjViYWEzMGNjZjNiMGE2ZDY2Nzg=.thumb.jpg",
+                    "publishedAt": "2020-05-07T17:31:00Z",
+                    "content": "Fostul tehnician a explicat: \"Este o zi extraordinar, a fost un un meci foarte disputat, o partid foarte bun.\r\nÎnainte de meci ne-am dus într-un parc de pe lâng autostrada Sevillei i au venit foarte multe maini care erau colorate cu rou i albastru, iar astea … [+1372 chars]"
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Www.gsp.ro"
+                    },
+                    "author": "Gazeta Sporturilor",
+                    "title": "Un tabloid anunță: petrecere monstru cu manele, șprițuri și baxuri de prosoape! Mutu, Dan Diaconescu, Mihai R - Gazeta Sporturilor",
+                    "description": "Mai multe personaje celebre din România ar fi organizat o petrecere uriașă în București, Printre invitați ar fi fost Adrian Mutu, Ciprian Marica, Mihai Rotaru și Dan Diaconescu.",
+                    "url": "https://www.gsp.ro/gsp-special/stiri-extrasport/mutu-dan-diaconescu-mihai-rotaru-zicu-si-rat-au-ras-de-marica-petrecere-monstru-cu-manele-sprituri-si-baxuri-de-prosoape-598105.html",
+                    "urlToImage": "https://cacheimg.gsp.ro/autocrop/smp-images-production/gsp.ro/07052020/1588872915038.jpg?width=600&height=315",
+                    "publishedAt": "2020-05-07T17:25:34Z",
+                    "content": "Tabloidul Cancan anun c aproape 30 de persoane ar fi chefuit la un local din Pipera, ignorând Ordonana Militar impus în România din cauza pandemiei de coronavirus. \r\nPetrecerea ar fi fost una spectaculoas, cu invitai unul i unu. Printre cei care au fost se nu… [+1137 chars]"
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Digisport.ro"
+                    },
+                    "author": "Octavian Vasilescu",
+                    "title": "Lucrările la stadioanele pentru Euro nu au fost oprite din cauza COVID-19. Strategia câștigătoare a CNI - DigiSport",
+                    "description": "",
+                    "url": "https://www.digisport.ro/fotbal/liga-1/lucrarile-la-stadioanele-pentru-euro-nu-au-fost-oprite-din-cauza-covid-19-strategia-castigatoare-a-cni-834214",
+                    "urlToImage": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTAxdHJhbnNjb2Rlci5yY3Mt/cmRzLnJvJTJGc3RvcmFnZSUyRjIwMjAl/MkYwNCUyRjI5JTJGMTE4MTE2N18xMTgx/MTY3X1JQU182MzY4LmpwZyZ3PTY0MCZo/PTQ4MCZ6Yz0xJmhhc2g9NDkyM2EwZDY2NDFjZjQyYzM5OGNmYmY2YzhmMmRiMWU=.thumb.jpg",
+                    "publishedAt": "2020-05-07T17:05:00Z",
+                    "content": "Directorul de investiii al CNI, Adrian Cefalan, a explicat ce msuri de precauie au fost luate pe antiere: \"La Stadionul Steaua s-a terminat de montat prima tabel, iar acum se vor apuca alpinitii de a doua. Sptmâna viitoare vom începe probele tehnice.\r\nLucrril… [+4199 chars]"
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Www.gsp.ro"
+                    },
+                    "author": "Gazeta Sporturilor",
+                    "title": "Mike Tyson revine în ring, dar foștii adversari trag semnalul de alarmă: „Dacă lovește, poate omorî pe cineva - Gazeta Sporturilor",
+                    "description": "Mike Tyson, unul dintre cei mai mari boxeri ai tuturor timpurilor, dă semne tot mai clare că-și pregătește întoarcerea în ring.",
+                    "url": "https://www.gsp.ro/sporturi/box/mike-tyson-revine-in-ring-dar-fostii-adversari-trag-semnalul-de-alarma-poate-omori-pe-cineva-598104.html",
+                    "urlToImage": "https://cacheimg.gsp.ro/autocrop/smp-images-production/gsp.ro/07052020/1588871589512.jpg?width=600&height=315",
+                    "publishedAt": "2020-05-07T16:50:53Z",
+                    "content": "În cadrul unor meciuri caritable, pugilistul ar urma s boxeze împotriva unor foti rugbiti, care dup retragerea din rugby au cochetat cu sporturile de contact. Mike Tyson ar putea s se dueleze cu Sonny Bill Williams (34 de ani), un cunoscut fost juctor de rugb… [+953 chars]"
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Sport.ro"
+                    },
+                    "author": "Sport.ro",
+                    "title": "\"Ludogorets doboara recorduri pentru un star european!\" Reactia presei din Bulgaria despre posibilul transfer al lui Ianis Hagi - Sport.ro",
+                    "description": "Ianis Hagi nu duce lipsa de oferte in aceasta vara. Dupa Lazio si Rangers, inca un club si-a exprimat interesul pentru mijlocasul roman.&nbsp;",
+                    "url": "https://www.sport.ro/stranieri/ludogorts-doboara-recorduri-pentru-un-star-european-reactia-presei-din-bulgaria-despre-posibilul-transfer.html",
+                    "urlToImage": "https://assets.sport.ro/assets/sport/2020/05/07/image_galleries/700142/ludogorts-doboara-recorduri-pentru-un-star-european-reactia-presei-din-bulgaria-despre-posibilul-transfer_size6.jpg",
+                    "publishedAt": "2020-05-07T16:47:37Z",
+                    "content": "Ianis Hagi nu duce lipsa de oferte in aceasta vara. Dupa Lazio si Rangers, inca un club si-a exprimat interesul pentru mijlocasul roman. \r\nDupa cum a anuntat www.sport.ro in exclusivitate, Ludogorets Razgard ar fi interesata sa ii plateasca lui Genk cele 4 mi… [+940 chars]"
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Sport.ro"
+                    },
+                    "author": "Sport.ro",
+                    "title": "Situatie INCREDIBILA la Rapid! Echipa are doi antrenori!? \"In acte sunt inca antrenorul Rapidului!\" Daniel Pancu rupe tacerea - Sport.ro",
+                    "description": "Dan Alexa este antrenorul Rapidului din martie.",
+                    "url": "https://www.sport.ro/liga-2/situatie-inedita-la-rapid-echipa-cu-doi-antrenori-in-acte-sunt-inca-antrenorul-rapidului.html",
+                    "urlToImage": "https://assets.sport.ro/assets/sport/2020/05/07/image_galleries/700141/situatie-inedita-la-rapid-echipa-cu-doi-antrenori-in-acte-sunt-inca-antrenorul-rapidului_size6.jpg",
+                    "publishedAt": "2020-05-07T16:44:59Z",
+                    "content": "Dan Alexa este antrenorul Rapidului din martie.\r\nDan Alexa a fost anuntat ca fiind noul antrenor al Rapidului in martie, insa situatia este una putin bizara. Daniel Pancu este inca antrenor principal in acte si nimeni nu l-a anuntat nimic de reziliere.\r\n\"In a… [+881 chars]"
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Digisport.ro"
+                    },
+                    "author": "Digi Sport",
+                    "title": "Salvarea lui Dinamo poate veni de la un stelist: \"Gândiţi-vă ce ar însemna\" - DigiSport",
+                    "description": "Dinamo se află pe buza prăpastiei de ceva timp, atât financiar, cât şi sportiv. După ce potenţialii cumpărători au \"picat\" unul câte unul, soluţia salvatoare a avansat-o Ilie Dumitrescu.",
+                    "url": "https://www.digisport.ro/fotbal/liga-1/salvarea-lui-dinamo-poate-veni-de-la-un-stelist-ganditi-va-ce-ar-insemna-834385",
+                    "urlToImage": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTAxdHJhbnNjb2Rlci5yY3Mt/cmRzLnJvJTJGc3RvcmFnZSUyRjIwMjAl/MkYwNCUyRjI2JTJGMTE4MDI2M18xMTgw/MjYzX1JQU183MDI4LmpwZyZ3PTY0MCZo/PTQ4MCZ6Yz0xJmhhc2g9YTYxMWExYmRhNDFmNjAzMjVkZGVmNDQyYWZmMGY0NmE=.thumb.jpg",
+                    "publishedAt": "2020-05-07T16:35:00Z",
+                    "content": "Stelistul le-a dat o idee bun fanilor, astfel încât echipa nu numai c ar supravieui, ci chiar s-ar descurca destul de bine în Liga 1.\r\n\"10.000 de suporteri ori o donaie de 100 de euro de persoan ar însemna un milion de euro, ceea ce e un lucru fantastic, în f… [+1914 chars]"
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Sport.ro"
+                    },
+                    "author": "Sport.ro",
+                    "title": "\"S-ar potrivi foarte bine la Real Madrid!\" Fostul star al Barcelonei a dat verdictul dupa ce sa intalnit pe teren cu Mbappe! Ce spune despre transferul starului francez - Sport.ro",
+                    "description": "Florentino Perez a incercat inca de anul trecut sa il aduca pe starul francez la Madrid si probabil ca este doar o chestiune de timp pana cand transferul se va concret",
+                    "url": "https://www.sport.ro/franta/un-fost-star-de-la-barcelona-considera-ca-mbappe-este-perfect-pentru-clubul-din-capitala-spaniei-s-ar.html",
+                    "urlToImage": "https://assets.sport.ro/assets/sport/2020/05/07/image_galleries/700140/un-fost-star-de-la-barcelona-considera-ca-mbappe-este-perfect-pentru-clubul-din-capitala-spaniei-s-ar_size6.jpg",
+                    "publishedAt": "2020-05-07T16:34:00Z",
+                    "content": "Florentino Perez a incercat inca de anul trecut sa il aduca pe starul francez la Madrid si probabil ca este doar o chestiune de timp pana cand transferul se va concretiza.\r\nMbappe a avut si in aceasta campanie un sezon excelent. In cele 33 de meciuri, tanarul… [+814 chars]"
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Sport.ro"
+                    },
+                    "author": "Sport.ro",
+                    "title": "Barcelona il transfera pe noul Neymar! Catalanii sunt aproape sa finalizeze tranzactia unui brazilian de 19 ani: \"Mutarea se rezolva in zilele urmatoare\" - Sport.ro",
+                    "description": "Barcelona a pus ochii pe o noua &#39;perla&#39; a brazilienilor si sunt aproape sa finalizeze transferul.",
+                    "url": "https://www.sport.ro/spania/barcelona-il-transfera-pe-noul-neymar-catalanii-sunt-aproape-sa-finalizeze-tranzactia-unui-brazilian-de.html",
+                    "urlToImage": "https://assets.sport.ro/assets/sport/2020/05/07/image_galleries/700137/barcelona-il-transfera-pe-noul-neymar-catalanii-sunt-aproape-sa-finalizeze-tranzactia-unui-brazilian-de_size6.jpg",
+                    "publishedAt": "2020-05-07T16:08:28Z",
+                    "content": "Barcelona a pus ochii pe o noua 'perla' a brazilienilor si sunt aproape sa finalizeze transferul.\r\nGustavo Maia (19 ani) este atacantul brazilienilor de la Sao Paolo si va face pasul la Barcelona.\r\nCatalanii ar fi achitat inca din vara trecuta suma de 3.5 mil… [+553 chars]"
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Digisport.ro"
+                    },
+                    "author": "Digi Sport",
+                    "title": "Sorin Cârţu a clarificat problema antrenorului Craiovei. Ce spune despre Papură: \"Eu ştiu de ce a plecat\" - DigiSport",
+                    "description": "Plecarea lui Cornel Papură de pe banca celor de la Universitatea Craiova a surprins pe toată lumea, iar zvonurile au început să apară pe bandă rulantă.",
+                    "url": "https://www.digisport.ro/fotbal/liga-1/sorin-cartu-a-clarificat-problema-antrenorului-craiovei-ce-spune-despre-papura-eu-stiu-de-ce-a-plecat-834368",
+                    "urlToImage": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTAxdHJhbnNjb2Rlci5yY3Mt/cmRzLnJvJTJGc3RvcmFnZSUyRjIwMjAl/MkYwNCUyRjI5JTJGMTE4MTI1NF8xMTgx/MjU0X0JPR18wMTc1X2NvcHkuanBnJnc9/NjQwJmg9NDgwJnpjPTEmaGFzaD02ZjBh/MmUwMzBiOWU5ZGMyNzRjNzEwNTMxOGJiZmYzNg==.thumb.jpg",
+                    "publishedAt": "2020-05-07T16:07:00Z",
+                    "content": "Preedintele oltenilor, Sorin Câru, a inut s clarifice variantele din ultima vreme, Edi Iordnescu, Cosmin Contra sau Eugen Neagoe.\r\n\"Nu cred c va fi Contra. Eugen Neagoe poate. Mai dureaz dou-trei zile, pân duminic maxim, când se decide. Eu nu mai am vâna care… [+1016 chars]"
+                }
+            ];
+            const categories = [
+                { 'name': 'Home', 'link': 'index.html', 'current_link': false },
+                { 'name': 'Business', 'link': 'business.html', 'current_link': false },
+                { 'name': 'Entertainment', 'link': 'entertainment.html', 'current_link': false },
+                { 'name': 'Health', 'link': 'health.html', 'current_link': false },
+                { 'name': 'Science', 'link': 'science.html', 'current_link': false },
+                { 'name': 'Sports', 'link': 'sports.html', 'current_link': true },
+                { 'name': 'Technology', 'link': 'technology.html', 'current_link': false },
+            ];
+            populateCategories(categories);
+            populateArticles(articles);
+        }
+    </script>
+</body>
+
+</html>

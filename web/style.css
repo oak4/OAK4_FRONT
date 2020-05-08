@@ -2,16 +2,18 @@ body {
     margin: unset;
     width: 100%;
     font-family: Roboto, sans-serif;
+    background-color: silver;
 }
 
 nav {
     display: flex;
     flex-direction: row;
-    justify-content:center ;
+    flex-wrap: wrap;
+    justify-content: center;
     background-color: #333;
 }
 
-a {
+nav>a {
     padding: 20px;
     text-decoration: none;
     color: white;
@@ -20,19 +22,56 @@ a {
     text-align: center;
 }
 
-a:hover {
+nav>a:hover {
     background-color: #444;
 }
-a.current_link{
-    color: #aaa;
 
+nav>a.current_link {
+    color: #aaa;
 }
-a#home{
+
+nav>a#home {
     float: left;
 }
-main{
-    width: 60%;
-    padding-left: 20%;
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 80%;
+    padding-left: 10%;
     padding-top: 3%;
-    text-indent: 5%;
+}
+
+main>a {
+    text-decoration: none;
+    color: #444;
+    width: 30%;
+    min-width: 300px;
+    margin: 3% 0% 3% 3%;
+    background-color: white;
+}
+
+main>a>img {
+    width: 100%;
+}
+
+main>a>.content,.content {
+    padding: 5%;
+}
+
+article {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    text-align: justify;
+
+}
+
+article>img {
+    width: 100%;
+}
+p{
+    font-size: large;
 }

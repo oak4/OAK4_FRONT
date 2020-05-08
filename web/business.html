@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <nav id="navbar">
+    </nav>
+    <main id="articles-container">
+    </main>
+    <script>
+        window.onload = () => {
+            const articles = [
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Digi24.ro"
+                    },
+                    "author": "Digi24",
+                    "title": "Digi sărbătorește clienții loiali și le aduce oferte speciale, de Digi Days - Digi24",
+                    "description": "Digi vine în sprijinul clienților fideli și le răsplătește încrederea în serviciile companiei cu o reducere de 50% timp de 6 luni, dacă vor opta pentru un pachet superior al serviciilor contractate deja, pentru adăugarea altor servicii din portofoliul Digi sa…",
+                    "url": "https://www.digi24.ro/stiri/economie/companii/digi-sarbatoreste-clientii-loiali-si-le-aduce-oferte-speciale-de-digi-days-1303420",
+                    "urlToImage": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTA2dHJhbnNjb2Rlci5yY3Mt/cmRzLnJvJTJGc3RvcmFnZSUyRjIwMjAl/MkYwNSUyRjA3JTJGMTE4MzIzNF8xMTgz/MjM0X0NQX0RpZ2lEYXlzX0NhbXBhbmll/X0ZJTkFMLmpwZyZ3PTY0MCZoPTQ4MCZ6/Yz0xJmhhc2g9MjZhNmQzODYzM2YwODAwNzFlNzQ0MTA2YTc2YmMyNjA=.thumb.jpg",
+                    "publishedAt": "2020-05-07T11:35:00Z",
+                    "content": "Digi vine în sprijinul clienilor fideli i le rspltete încrederea în serviciile companiei cu o reducere de 50% timp de 6 luni, dac vor opta pentru un pachet superior al serviciilor contractate deja, pentru adugarea altor servicii din portofoliul Digi sau activ… [+2749 chars]"
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Economica.net"
+                    },
+                    "author": null,
+                    "title": "Kaufland a deschis magazinul cu numărul 130. Este primul operator de hypermarketuri din România care atinge acest prag numeric - Economica.net",
+                    "description": "Kaufland Rom&acirc;nia, cel mai mare jucător pe piața comerțului alimentar din punct de vedere al cifrei de afaceri,&nbsp; inaugurează astăzi magazinul cu numărul 14 din București și ajunge la o rețea de 130 de hipermarketuri &icirc;n Rom&acirc;nia. Este sing…",
+                    "url": "https://www.economica.net/kaufland-deschide-magazinul-cu-numarul-130_184033.html",
+                    "urlToImage": "https://cmedia.romaniatv.net/image/202005/full/kaufland_energeticienilor__foto_3_86157600.jpg",
+                    "publishedAt": "2020-05-07T07:05:50Z",
+                    "content": "Kaufland România a inaugurat astzi,7 mai, pe bulevardul Energeticienilor, nr. 13-15, din sectorul 3 al Capitalei, magazinul cu numrul 14 din Bucureti i al 130-lea de hipermarketuri în România, informeaz un comunicat al companiei.\r\nAcesta este al treilea magaz… [+2354 chars]"
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Promotor.ro"
+                    },
+                    "author": null,
+                    "title": "Alpina lansează D3 S. Un diesel conceput pentru Autobahn – GALERIE FOTO - ProMotor",
+                    "description": "În urma debutului modelului pe benzină B3 la sfârșitul anului trecut, Alpina Automobile a prezentat acum modelul diesel D3 S.",
+                    "url": "https://www.promotor.ro/stiri-auto/alpina-lanseaza-d3-s-un-diesel-conceput-pentru-autobahn-galerie-foto-18684200",
+                    "urlToImage": "https://www.promotor.ro/wp-content/uploads/2020/05/2021-Alpina-D3-S-Touring-1-1.jpg",
+                    "publishedAt": "2020-05-06T07:33:15Z",
+                    "content": "În urma debutului modelului pe benzin B3 la sfâritul anului trecut, Alpina Automobile a prezentat acum modelul diesel D3 S.\r\nDisponibil atât în stiluri de caroserie sedan, cât i break, Alpina D3 S ar trebui, cel puin teoretic, s devin cel mai apropiat model d… [+1327 chars]"
+                }
+
+            ];
+            const categories = [
+                { 'name': 'Home', 'link': 'index.html', 'current_link': false },
+                { 'name': 'Business', 'link': 'business.html', 'current_link': true },
+                { 'name': 'Entertainment', 'link': 'entertainment.html', 'current_link': false },
+                { 'name': 'Health', 'link': 'health.html', 'current_link': false },
+                { 'name': 'Science', 'link': 'science.html', 'current_link': false },
+                { 'name': 'Sports', 'link': 'sports.html', 'current_link': false },
+                { 'name': 'Technology', 'link': 'technology.html', 'current_link': false },
+            ];
+            populateCategories(categories);
+            populateArticles(articles);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <nav id="navbar">
+    </nav>
+    <main id="articles-container">
+    </main>
+    <script>
+        window.onload = () => {
+            const articles = [
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Idevice.ro"
+                    },
+                    "author": "Adrian Gabor",
+                    "title": "LUNA: Descoperirea ULUITOARE care Schimba TOT ceea ce Stiam - iDevice.ro",
+                    "description": "LUNA este in centrul unei descoperiri impresionante facute de catre cercetatori, iar asta ar putea schimba multe din ceea ce stim in momentul de fata in legatura cu satelitul natural al Pamantului. Mai exact, o nava care era in orbita lunii a detectat faptul …",
+                    "url": "https://www.idevice.ro/2020/05/07/luna-carbon-416015/",
+                    "urlToImage": "https://www.idevice.ro/wp-content/uploads/2020/05/luna-carbon.jpg",
+                    "publishedAt": "2020-05-07T15:57:29Z",
+                    "content": "LUNA este in centrul unei descoperiri impresionante facute de catre cercetatori, iar asta ar putea schimba multe din ceea ce stim in momentul de fata in legatura cu satelitul natural al Pamantului. Mai exact, o nava care era in orbita lunii a detectat faptul … [+2142 chars]"
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Ziarpiatraneamt.ro"
+                    },
+                    "author": "Ziar Piatra Neamt",
+                    "title": "În serile de mai se pot vedea pe cer Mercur și Venus © - Ziar Piatra Neamt",
+                    "description": "FOTO: Observatorul Astronomic \"Victor Anestin\" BacauÎn luna mai pe cerul de seară va fi vizibilă planeta Venus sau Luceafărul. Veți putea observa planeta ca un corp celest foarte strălucitor,  spre orizontul vestic şi nord-vestic. „Venus, cea mai str",
+                    "url": "https://www.ziarpiatraneamt.ro/in-serile-de-mai-se-pot-vedea-pe-cer-mercur-si-venus",
+                    "urlToImage": "https://www.ziarpiatraneamt.ro/wp-content/uploads/2020/05/sky-5114501_1920.jpg",
+                    "publishedAt": "2020-05-07T14:24:00Z",
+                    "content": "FOTO: Observatorul Astronomic „Victor Anestin” Bacau\r\nÎn luna mai pe cerul de sear va fi vizibil planeta Venus sau Luceafrul. Vei putea observa planeta ca un corp celest foarte strlucitor, spre orizontul vestic i nord-vestic. \r\nVenus, cea mai strlucitoare pla… [+2041 chars]"
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Idevice.ro"
+                    },
+                    "author": "Adrian Gabor",
+                    "title": "Calea Lactee: Cercetatorii SURPRINSI de O Noua Gaura Neagra - iDevice.ro",
+                    "description": "Calea Lactee reuseste iar sa-i surprinda pe cercetatorii din intreaga lume dupa ce in interiorul sau a fost descoperit ceva ce putini credeau ca vor vedea, mai exact o noua gaura neagra care este surprinzator de aproape de Pamant. Se pare ca pana acum cerceta…",
+                    "url": "https://www.idevice.ro/2020/05/07/calea-lactee-gauri-415972/",
+                    "urlToImage": "https://www.idevice.ro/wp-content/uploads/2020/05/Calea-Lactee-gauri.jpg",
+                    "publishedAt": "2020-05-07T11:51:07Z",
+                    "content": "Calea Lactee reuseste iar sa-i surprinda pe cercetatorii din intreaga lume dupa ce in interiorul sau a fost descoperit ceva ce putini credeau ca vor vedea, mai exact o noua gaura neagra care este surprinzator de aproape de Pamant. Se pare ca pana acum cerceta… [+1787 chars]"
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Ziare.com"
+                    },
+                    "author": null,
+                    "title": "A fost descoperita cea mai apropiata gaura neagra de Pamant (Foto) - Ziare.com",
+                    "description": "Cea mai apropiata gaura neagra de Terra a fost descoperita de astronomi la circa 1.000 de ani-lumina distanta de planeta noastra, conform unui studiu stiintific publicat miercuri.",
+                    "url": "http://www.ziare.com/magazin/spatiu/a-fost-descoperita-cea-mai-apropiata-gaura-neagra-de-pamant-foto-1610143",
+                    "urlToImage": "http://s1.ziareromania.ro/?mmid=f1bf2562b8bf875a4d",
+                    "publishedAt": "2020-05-07T11:40:00Z",
+                    "content": "Cea mai apropiata gaura neagra de Terra a fost descoperita de astronomi la circa 1.000 de ani-lumina distanta de planeta noastra, conform unui studiu stiintific publicat miercuri.Gaura neagra se afla pe orbita cu doua stele ce pot fi vazute cu ochiul liber di… [+2010 chars]"
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Stiripesurse.ro"
+                    },
+                    "author": "Andreea Năstase",
+                    "title": "Calea Lactee este o galaxie spirală barată cu patru braţe, potrivit unei hărţi structurale de înaltă rezoluţie - stiripesurse.ro",
+                    "description": "O echipă internaţională de astronomi a dezvăluit, după un studiu cu o durată de 15 ani, o...",
+                    "url": "https://www.stiripesurse.ro/calea-lactee-este-o-galaxie-spirala-barata-cu-patru-brate-potrivit-unei-harti-structurale-de-inalta_1461957.html",
+                    "urlToImage": "https://mediastiriv1.freenode.ro/image/201804/w800/media-152318158639700300.jpg",
+                    "publishedAt": "2020-05-07T11:20:00Z",
+                    "content": "O echip internaional de astronomi a dezvluit, dup un studiu cu o durat de 15 ani, o hart cu cea mai înalt rezoluie pân în prezent a structurii spiralate a Cii Lactee, oferind dovada clar c aceasta este o galaxie spiral barat prevzut cu patru brae principale, … [+1908 chars]"
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Playtech.ro"
+                    },
+                    "author": null,
+                    "title": "Marte a avut apă acum miliarde de ani: cele mai detaliate imagini arată un râu masiv care a curs pe planetă - Playtech",
+                    "description": "Cele mai detaliate imagini cu urmele unui râu care a curs acum câteva miliarde de ani pe Marte arată că planeta ar fi putut susține cândva viața.",
+                    "url": "https://playtech.ro/2020/marte-a-avut-apa-rau-masiv/",
+                    "urlToImage": "https://playtech.ro/wp-content/uploads/2018/12/marte.jpg",
+                    "publishedAt": "2020-05-07T09:53:12Z",
+                    "content": "Cele mai detaliate imagini cu urmele unui râu care a curs acum câteva miliarde de ani pe Marte arat c planeta ar fi putut susine cândva viaa.\r\nPe msur ce tehnologia a progresat i echipamentele trimise în spaiu au devenit tot mai performante, oamenii de tiin a… [+2898 chars]"
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Mediafax.ro"
+                    },
+                    "author": "Ana Obretin",
+                    "title": "Cea mai apropiată gaură neagră de Terra, descoperită la o distanţă de 1.000 de ani-lumină - Mediafax",
+                    "description": "",
+                    "url": "https://www.mediafax.ro/externe/cea-mai-apropiata-gaura-neagra-de-terra-descoperita-la-o-distanta-de-1-000-de-ani-lumina-19118314",
+                    "urlToImage": "https://storage0.dms.mpinteractiv.ro/media/1/1/3614/19118314/1/profimedia-0514645989.jpg?width=640",
+                    "publishedAt": "2020-05-07T09:10:59Z",
+                    "content": "\"Doar\" 1.000 de ani-lumin ne separ de cea mai apropiat gaur neagr. Astronomii de la Observatorul European Austral din Chile au descoperit o nou gaur neagr, cea mai apropiat de Terra vreodat detectat, situat într-un sistem stelar vizibil cu ochiul liber, potri… [+1885 chars]"
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Idevice.ro"
+                    },
+                    "author": "Adrian Gabor",
+                    "title": "Planeta Mercur: Misterul IMPORTANT ce NU are Explicatie Inca - iDevice.ro",
+                    "description": "Planeta Mercur este una dintre putinele din sistemul nostru solar care inca mai are un camp magnetic activ, iar cercetatorii nu au deocamdata o explicatie pentru acest lucru, asteptarile lor fiind altele. Cercetatorii s-ar fi asteptat ca planeta Mercur sa ram…",
+                    "url": "https://www.idevice.ro/2020/05/06/planeta-mercur-magnetic-415778/",
+                    "urlToImage": "https://www.idevice.ro/wp-content/uploads/2020/05/Planeta-Mercur-magnetic.jpg",
+                    "publishedAt": "2020-05-06T08:25:51Z",
+                    "content": "Planeta Mercur este una dintre putinele din sistemul nostru solar care inca mai are un camp magnetic activ, iar cercetatorii nu au deocamdata o explicatie pentru acest lucru, asteptarile lor fiind altele. Cercetatorii s-ar fi asteptat ca planeta Mercur sa ram… [+2260 chars]"
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Noi.md"
+                    },
+                    "author": "Noi.md",
+                    "title": "A fost determinată unicitatea Soarelui în comparație cu alte stele - Noi.md - Новости Молдовы",
+                    "description": "A fost determinată unicitatea Soarelui în comparație cu alte stele",
+                    "url": "https://noi.md/stiinta-si-it/a-fost-determinata-unicitatea-soarelui-in-comparatie-cu-alte-stele",
+                    "urlToImage": "https://noi.md/uploads/newsthumbs/760_500/437742.jpg?1588884994",
+                    "publishedAt": "2020-05-06T02:00:38Z",
+                    "content": "Soarele este mai puin magnetoactiv decît alte stele asemntoare i noi nu tim de ce.\r\nObservaiile arat c Soarele nostru este mai puin activ decît alte stele cu parametri similari, se arat într-un raport publicat în revista Science pe 1 mai.Acest fapt poate conf… [+644 chars]"
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Timpul.md"
+                    },
+                    "author": null,
+                    "title": "Cea mai lungă eclipsă de lună se apropie. Când va avea loc fenomenul - TIMPUL.MD",
+                    "description": "Super-eclipsa se apropie cu paşi repezi. Astronomul Bruce McClure a afirmat că eclipsa de Lună va dura o oră şi 43 minute. Conform Tech Times, va dura aproximativ patru ore până...",
+                    "url": "https://www.timpul.md/articol/cea-mai-lunga-eclipsa-de-luna-se-apropie--cand-va-avea-loc-fenomenul--133319.html",
+                    "urlToImage": "https://www.timpul.md/uploads/modules/news/2018/07/133319/1200x630_eclipsa_65503500_66959100.jpg",
+                    "publishedAt": "2018-07-19T11:25:08Z",
+                    "content": "Istorie\r\n 29 Aprilie 2020, ora: 15:04\r\nDe trei sferturi de secol, spaiul public din Republica Moldova, a fost poluat de o istorie de rzboi, cu mai muli eroi sovietici, lâng satul nistrean Rsciei. S-a tot povestit...\r\nCitete tot articolul\r\nIstorie\r\n 29 Aprilie… [+20240 chars]"
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Romaniatv.net"
+                    },
+                    "author": "",
+                    "title": "Omenirea, în alertă: O furtună solară va lovi Pământul, MARŢI. Este una dintre cele mai mari ameninţări pentru Terra - RomaniaTV.net",
+                    "description": "Specialiştii trag semnalul de alarmă &icirc;n legătură cu o furtună solară care se va produce &icirc;n cursul zilei de marţi şi va lovi Păm&acirc;ntul.",
+                    "url": "https://www.romaniatv.net/omenirea-in-alerta-o-furtuna-solara-va-lovi-pamantul-marti-este-una-dintre-cele-mai-mari-amenint_392427.html",
+                    "urlToImage": "http://media.rtv.net/image/201712/full/furtuna_solara_18712200.jpg",
+                    "publishedAt": "2017-12-11T19:38:24Z",
+                    "content": "Cercettorii se pregtesc pentru o \"furtun geomagnetic\" puternic - un nor de particule din atmosfera Soarelui - care va perturba câmpul magnetic al Pmântului.\r\nPrimul efect resimit pe Pmânt va consta în perturbri severe în utilizarea energiei electrice, potrivi… [+537 chars]"
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Antena3.ro"
+                    },
+                    "author": "Redactia",
+                    "title": "Avertisment NASA: Un asteroid „destul de periculos” se apropie de Pământ. Se va întâmpla chiar înainte de Crăciun - Antena 3",
+                    "description": "Un asteroid, denumit 3200 Phaethon, va trece foarte aproape de Pâmânt chiar înainte de Crăciun, atrag atenția specialiștii.Evenimentul va avea loc în data de 17 decembrie, iar asteroidul,...",
+                    "url": "https://www.antena3.ro/life/stiinta/avertisment-nasa-un-asteroid-destul-de-periculos-se-apropie-de-pamant-se-va-intampla-chiar-inainte-443678.html",
+                    "urlToImage": "https://www.antena3.ro/thumbs/big3/2017/11/24/avertisment-nasa-un-asteroid-destul-de-periculos-se-apropie-de-pamant-se-va-intampla-chiar-inainte-493096.jpg",
+                    "publishedAt": "2017-11-24T11:37:51Z",
+                    "content": "Un asteroid, denumit 3200 Phaethon, va trece foarte aproape de Pâmânt chiar înainte de Crciun, atrag atenia specialitii.\r\nEvenimentul va avea loc în data de 17 decembrie, iar asteroidul, despre care specialitii de la NASA afirm c este destul de periculos, va … [+329 chars]"
+                }
+            ];
+            const categories = [
+                { 'name': 'Home', 'link': 'index.html', 'current_link': false },
+                { 'name': 'Business', 'link': 'business.html', 'current_link': false },
+                { 'name': 'Entertainment', 'link': 'entertainment.html', 'current_link': false },
+                { 'name': 'Health', 'link': 'health.html', 'current_link': false },
+                { 'name': 'Science', 'link': 'science.html', 'current_link': true },
+                { 'name': 'Sports', 'link': 'sports.html', 'current_link': false },
+                { 'name': 'Technology', 'link': 'technology.html', 'current_link': false },
+            ];
+            populateCategories(categories);
+            populateArticles(articles);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <nav id="navbar">
+    </nav>
+    <main id="articles-container">
+    </main>
+    <script>
+        window.onload = () => {
+            const articles = [
+
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Stirileprotv.ro"
+                    },
+                    "author": null,
+                    "title": "Zona prin care coronavirusul intră în corp. Ne acoperim degeaba doar gura - stirileprotv.ro",
+                    "description": "Zona prin care coronavirusul intră în corp. Ne acoperim degeaba doar gura",
+                    "url": "https://stirileprotv.ro/stiri/stiinta/zona-cea-mai-vulnerabila-din-corp-cum-ne-putem-infecta-cel-mai-usor-cu-noul-coronavirus.html",
+                    "urlToImage": "https://image.stirileprotv.ro/media/images/1408x882/Apr2020/62121738.jpg",
+                    "publishedAt": "2020-05-07T16:25:00Z",
+                    "content": "Dou tipuri de celule din cavitatea nazal au fost identificate drept cele mai probabile puncte de intrare a coronavirusului în corpul uman, a concluzionat o echip internaional de cercettori.\r\nOamenii de ştiinţă au descoperit că două tipuri de celule prezentau … [+3103 chars]"
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Romaniatv.net"
+                    },
+                    "author": "",
+                    "title": "Cât de uşor se transmit bolile care macină ficatul. Hepatita B, de până la zece ori mai contagioasă decât virusul HIV | RomaniaTV.Net - Mobi - RomaniaTV.net",
+                    "description": "&Icirc;n timp ce hepatita B se transmite cu uşurinţă pe cale sexuală, riscul ca partenerul să ia boala fiind maxim, &icirc;n cazul virusului hepatitei C probabilitatea este mult mai mică, de doar 3 la sută.",
+                    "url": "https://www.romaniatv.net/cat-de-usor-se-transmit-bolile-care-macina-ficatul-hepatita-b-de-pana-la-zece-ori-mai-contagioasa_356849.html",
+                    "urlToImage": "http://media.rtv.net/image/201705/full/boli_ficat_35572400.jpg",
+                    "publishedAt": "2020-05-07T14:23:42Z",
+                    "content": "Transfuziile cu sânge netestat, vizitele dese la stomatolog i la saloanele de cosmetic care nu respect regulile de sterilizare, folosirea în comun de seringi în cazul consumatorilor de droguri sunt doar câteva dintre cile de transmitere a hepatitelor virale. … [+3555 chars]"
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Romaniatv.net"
+                    },
+                    "author": "",
+                    "title": "Virusul gripal creşte considerabil riscul de criză cardiacă - RomaniaTV.net",
+                    "description": "Persoanele care suferă de gripă ar putea avea un risc de şase de ori mai mare de criză cardiacă &icirc;n prima săptăm&acirc;nă de manifestare a infecţiei, conform unui studiu publicat miercuri, care confirmă necesitatea extinderii pe scară",
+                    "url": "https://www.romaniatv.net/virusul-gripal-creste-considerabil-riscul-de-criza-cardiaca_399956.html",
+                    "urlToImage": "http://media.rtv.net/image/201504/full/virus_56947500.jpg",
+                    "publishedAt": "2020-05-06T19:54:14Z",
+                    "content": "Riscul de atac de cord este deosebit de ridicat în special la vârstnici, susin autorii studiului publicat în New England Journal of Medicine (NEJM), citat de AFP. Acest lucru confirm concluziile cercetrilor anterioare care au demonstrat o legtur între grip, c… [+954 chars]"
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Romaniatv.net"
+                    },
+                    "author": "",
+                    "title": "Cum să ai o masă SĂNĂTOASĂ de Paşte. Cat trebuie să aibă un miel când îl cumpărăm - RomaniaTV.net",
+                    "description": "Nu mai este foarte mult p&acirc;nă la Paște și, pentru mulți dintre noi, un mare prilej de bucurie, pe l&acirc;ngă simbolistica religioasă a &Icirc;nvierii Domnului, este ospățul alături de cei dragi. Nutriționiștii ne avertizează &icirc;",
+                    "url": "https://www.romaniatv.net/cum-sa-ai-o-masa-sanatoasa-de-paste-cat-trebuie-sa-aiba-un-miel-cand-il-cumparam_350309.html",
+                    "urlToImage": "http://media.rtv.net/image/201704/full/646x404_19614000.jpg",
+                    "publishedAt": "2020-05-06T19:44:36Z",
+                    "content": "Pe 16 aprilie este Patele i ne vom bucura cu toii de aceast srbtoare, mai ales c ne vom strânge la mas alturi de cei dragi. Aa cum este tradiia, la noi, gospodinele se vor întrece în pregtirea celor mai delicioase preparate, multe dintre ele pe baz de miel, p… [+1000 chars]"
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Romaniatv.net"
+                    },
+                    "author": "",
+                    "title": "Minunile Papei Francisc: O fetiţă s-ar fi vindecat de o tumoră la creier după sărutul dat de Suveranul Pontif - RomaniaTV.net",
+                    "description": "Tumora de pe creierul Giannei, o fetiță de un an, a dispărut practic, după cum dovedesc scanările, minunea put&acirc;ndu-se datora sărutului Papei Francisc, susțin părinții copilului.",
+                    "url": "https://www.romaniatv.net/minunile-papei-francisc-o-fetita-s-ar-fi-vindecat-de-o-tumora-la-creier-dupa-sarutul-dat-de-suveranul-pontif_258746.html",
+                    "urlToImage": "http://media.rtv.net/image/201511/full/tumoare_scazuta_87288700.jpg",
+                    "publishedAt": "2020-05-06T19:41:14Z",
+                    "content": "Gianna avea doar câteva sptmâni când i s-a depistat o tumor cerebral, inoperabil, cu prilejul unor analize realizate la un centru spitalicesc la Philadelphia, relateaz luni 20minutes.ch, citat de Agerpres. \r\nPrinii Giannei cred c în cazul fetiei lor s-a înfpt… [+1163 chars]"
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Romaniatv.net"
+                    },
+                    "author": "",
+                    "title": "Detoxifierea de cinci zile pe care o ţine Dr. Oz vara - RomaniaTV.net",
+                    "description": "Este un plan de dietă conceput de specialist pentru a slăbi rapid şi a ajuta la eliminarea toxinelor din corp. Descoperă trucuri simple!",
+                    "url": "https://www.romaniatv.net/detoxifierea-de-cinci-zile-pe-care-o-tine-dr-oz-vara_232729.html",
+                    "urlToImage": "http://media.rtv.net/image/201507/full/ozu_dr_17222500.jpg",
+                    "publishedAt": "2020-05-06T19:18:19Z",
+                    "content": "Aceste alimente ajut în procesul de detoxifiere, reducând inflamaiile i favorizând scderea în greutate. \r\nF-i o list cu cele mai bogate alimente în sulf i asigur-te c le ai la îndemân în aceste trei zile de detox: avocado, ton, migdale, pui, zucchini, morcovi… [+514 chars]"
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Romaniatv.net"
+                    },
+                    "author": null,
+                    "title": "Doina Popoviciu Dincă a fost diagnosticată cu CANCER. Fotografii TULBURĂTOARE din spital - RomaniaTV.net",
+                    "description": "Doina Popoviciu Dincă, fosta soţie a omului de afaceri Puiu Popoviciu şi fiica fostului demnitar ceauşist Ion Dincă, trece prin clipe grele.",
+                    "url": "https://www.romaniatv.net/doina-popoviciu-dinca-a-fost-diagnosticata-cu-cancer-fotografii-tulburatoare-din-spital_264307.html",
+                    "urlToImage": "http://media.rtv.net/image/201512/full/doina_dinca_54593700.jpg",
+                    "publishedAt": "2020-05-06T19:16:37Z",
+                    "content": "Doina Popoviciu Dinc, despre care se spune c ar fi cea mai bogat românc, a ost diagnosticat cu cancer. A fcut mrturisirea pe Facebook, unde a i postat mai multe fotografii din timpul terapiei. Doina Popoviciu Dinc a fost deja operat, iar acum urmeaz un tratam… [+380 chars]"
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Romaniatv.net"
+                    },
+                    "author": null,
+                    "title": "Cum să scapi de coşurile sub piele. Iată care sunt cele mai eficiente soluţii - RomaniaTV.net",
+                    "description": "Neplăcutele coșuri care apar sub piele sunt probabil printre neplăcute probleme care apar la nivelul epidermei. Acestea sunt dureroase, mari, greu de ascuns sub machiaj și, mai ales, dificil de tratat.",
+                    "url": "https://www.romaniatv.net/cum-sa-scapi-de-cosurile-sub-piele-iata-care-sunt-cele-mai-eficiente-solutii_271489.html",
+                    "urlToImage": "http://media.rtv.net/image/201602/full/acnee_59007200.jpg",
+                    "publishedAt": "2020-05-06T18:47:16Z",
+                    "content": "În nici un caz nu este recomandat stoarcerea acestora, deoarece tipul acesta de couri poate provoca infecii periculoase dac nu sunt tratate corespunztor. Iat câteva remedii naturiste pentru vindecarea courilor formate sub piele!\r\nComprese cu ceai sau ap fierb… [+1121 chars]"
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Romaniatv.net"
+                    },
+                    "author": null,
+                    "title": "Cum să scapi RAPID de herpes. Află MIRACULOSUL tratament din casa ta! - RomaniaTV.net",
+                    "description": "Herpesul este cauzat de un virus, numit Herpes simplex, iar acesta este transmis cu foarte mare ușurință.",
+                    "url": "https://www.romaniatv.net/cum-sa-scapi-rapid-de-herpes-afla-miraculosul-tratament-din-casa-ta_291976.html",
+                    "urlToImage": "http://media.rtv.net/image/201605/full/herpes2_86060000.jpg",
+                    "publishedAt": "2020-05-06T18:34:49Z",
+                    "content": "De cele mai multe ori, acesta apare în copilrie, iar odat ce o persoan este infestat, acest virus rmâne latent i persist în organism, manifestându-se prin apariia herpesului, caracterizat prin mici vezicule cu lichid clar, localizate pe buz sau în colul buzei… [+1658 chars]"
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Romaniatv.net"
+                    },
+                    "author": "",
+                    "title": "SOCATA: Cea mai bună REŢETĂ DE SOCATĂ. Mod de preparare SOCATĂ - RomaniaTV.net",
+                    "description": "SOCATA: Cea mai bună reţeta de socată. Mod de preparare SOCATĂ.&nbsp;Socata este una dintre bauturile racoritoare ale copilariei. Mai jos, RomaniaTV.net vă prezintă o reteta simpla pentru aceasta bautura minunata. Merita din plin sa o consumati",
+                    "url": "https://www.romaniatv.net/socata-cea-mai-buna-reteta-de-socata-mod-de-preparare-socata_357898.html",
+                    "urlToImage": "http://media.rtv.net/image/201610/full/socata_09287000.png",
+                    "publishedAt": "2020-05-06T18:34:46Z",
+                    "content": "SOCATA: Cea mai bun reeta de socat. Mod de preparare SOCAT. Florile de soc sunt recomandate ca terapie pentru combaterea multor afectiuni: digestive (au proprietati diuretice si laxative), respiratorii (raceala, gripa si bronsita), dermatologice, oculare, afe… [+9490 chars]"
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Romaniatv.net"
+                    },
+                    "author": "",
+                    "title": "Salariaţii nu o să mai poată fi verificaţi dacă stau acasă cât timp sunt în concediu medical - RomaniaTV.net",
+                    "description": "De vineri, salariaţii nu vor mai fi verificaţi la domiciliu atunci c&acirc;nd se află &icirc;n concediu medical, potrivit unui act normativ publicat marţi &icirc;n Monitorul Oficial. &Icirc;n prezent, aceste controale sunt făcute &icirc;n cazuri",
+                    "url": "https://www.romaniatv.net/salariatii-nu-o-sa-mai-poata-fi-verificati-daca-stau-acasa-cat-sunt-in-concediu-medical_231604.html",
+                    "urlToImage": "http://media.rtv.net/image/201507/full/concediu_medical_40578700.jpg",
+                    "publishedAt": "2020-05-06T18:25:25Z",
+                    "content": "Legea nr. 183/2015, prin intermediul careia se elimina posibilitatea verificarilor la domiciliul salariatilor aflati in concediu medical, a fost publicata in Monitorul Oficial, Partea I, nr. 496 din 7 iulie si va intra in vigoare vineri.\r\nSalariatii au dreptu… [+1850 chars]"
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Romaniatv.net"
+                    },
+                    "author": null,
+                    "title": "Dieta indiană te ajută să slăbeşti repede şi sănătos - RomaniaTV.net",
+                    "description": "Dieta indiană e &icirc;n top. C&acirc;nd vă g&acirc;ndiți să apelați la o anumită cură de slăbire, trebuie să luați &icirc;n calcul o serie de factori, de exemplu: v&acirc;rsta și greutatea.",
+                    "url": "https://www.romaniatv.net/dieta-indiana-te-ajuta-sa-slabesti-repede-si-sanatos_403951.html",
+                    "urlToImage": "http://media.rtv.net/image/201802/full/dieta_indiana_20394500.jpg",
+                    "publishedAt": "2020-05-06T18:24:21Z",
+                    "content": "Dar i rata metabolica, nivelul de activitate sau starea de sanatate. Corpul fiecarei persoane este diferit si fiecare are nevoie de un anumit numar de calorii, pentru a functiona cat mai bine.\r\nAflarea indicelui metabolic va poate ajuta la calcularea numarulu… [+825 chars]"
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Romaniatv.net"
+                    },
+                    "author": null,
+                    "title": "Cercetătorii australieni susţin că sunt aproape de soluţia care vindecă în totalitate infecţia cu virusul herpetic - RomaniaTV.net",
+                    "description": "Cercetătorii australieni consideră ca au spart codul care ar putea duce la ținerea sub control a temutului virus herpetic, care provoacă pe nepregătite inflamații recurente, informează agenția de presă Xinhua.",
+                    "url": "https://www.romaniatv.net/cercetatorii-austalieni-sustin-ca-sunt-aproape-de-solutia-care-vindeca-in-totalitate-infectia-cu-virusul-herpetic_300953.html",
+                    "urlToImage": "http://media.rtv.net/image/201606/full/image003_86923000.jpg",
+                    "publishedAt": "2020-05-06T18:22:00Z",
+                    "content": "Virusul herpes simplex (HSV) este cunoscut pentru c rmâne latent în celulele nervoase ale unei persoane infectate mult timp dup ce orice inflamaie s-a vindecat, iar oamenii de tiin de la Australian National University (ANU) au descoperit c genele herpetice în… [+1528 chars]"
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Romaniatv.net"
+                    },
+                    "author": "",
+                    "title": "Dieta cu cireşe: slăbeşti 5 kg în 7 zile - RomaniaTV.net",
+                    "description": "Dacă nu știi ce să mai faci ca să slăbești și ai &icirc;ncercat absolut orice dietă, nu te da bătută. &Icirc;n plin sezon de cireșe, ar fi păcat să nu beneficiezi de proprietățile lor antioxidante, care &icirc;ți mențin sănătatea o",
+                    "url": "https://www.romaniatv.net/dieta-cu-cirese-slabesti-5-kg-in-7-zile_359078.html",
+                    "urlToImage": "http://media.rtv.net/image/201705/full/dieta_6_46366000.jpg",
+                    "publishedAt": "2020-05-06T18:18:12Z",
+                    "content": "Beneficiile cireelor\r\nO porie de 1 can de ciree fr sâmburi are 97 de calorii. Acestea pot fi consumate crude sau fierte. Înlocuirea unei mese cu aport de calorii mai ridicat, chiar i doar o dat pe sptmân, te poate ajuta s slbeti. Imagineaz-i, îns, cum este s … [+2669 chars]"
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Romaniatv.net"
+                    },
+                    "author": "",
+                    "title": "Câinii lui Corneliu Vadim Tudor, adoptaţi de patroana unui restaurant - RomaniaTV.net",
+                    "description": "Doi dintre c&acirc;inii lui&nbsp; Corneliu Vadim Tudor au fost adoptaţi şi vor fi crescuţi &icirc;ntr-un restaurant de prestigiu din Captală. Cea care se va ocupa de ei este şi o mai veche prietenă de familie, care va organiza la restaurant şi",
+                    "url": "https://www.romaniatv.net/cainii-lui-corneliu-vadim-tudor-adoptati-de-patroana-unui-restaurant_247445.html",
+                    "urlToImage": "http://media.rtv.net/image/201509/full/catei_vadim_15142000.jpg",
+                    "publishedAt": "2020-05-06T18:10:01Z",
+                    "content": "Laura Nicolau, alias Kera Calia sau o doamn de poveste, veche prieten cu Corneliu Vadim Tudor este cea care a decis s adopte doi dintre câinii pe care Tribunul îi avea la adpost. Ares i Artemisa sunt cei doi celui adoptai i care vor fi crescui chiar la restau… [+3423 chars]"
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Romaniatv.net"
+                    },
+                    "author": null,
+                    "title": "Fimoza. Iata ce trebuie sa stii daca esti parinte de baiat - RomaniaTV.net",
+                    "description": "Daca esti parinte de baiat, ai auzit cu siguranta despre fimoza, daca nu te-ai confruntat deja cu aceasta problema. Iata ce trebuie sa stii despre fimoza, potrivit doctorului Adrian Surd, medic specialist chirurgie pediatrica.",
+                    "url": "https://www.romaniatv.net/fimoza-iata-ce-trebuie-sa-stii-daca-esti-parinte-de-baiat_399097.html",
+                    "urlToImage": "http://media.rtv.net/image/201801/full/1_fimoza_bebe_5470_b_87597200.jpg",
+                    "publishedAt": "2020-05-06T18:07:10Z",
+                    "content": "Am ales acest subiect pentru ca reprezinta una din cele mai frecvente probleme cu care ma confrunt. Se pare ca toata lumea cunoaste un copil care a \"trebuit\" operat datorita unui preput ingustat, cunoscut de asemenea ca fimoza. Cand oamenii aud aceste intampl… [+2279 chars]"
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Romaniatv.net"
+                    },
+                    "author": "",
+                    "title": "Aerul condiţionat din maşină, extrem de PERICULOS pentru sănătate. Iată care este legătura cu cancerul şi avorturile spontane - RomaniaTV.net",
+                    "description": "Pe timpul verii, aerul condiționat este foarte utilizat &icirc;n mașină. Acesta poate fi, &icirc;nsă, extrem de periculos pentru sănătate. Dacă nu este curăţat cu regularitate şi folosit corect, acest aparat se transformă &icirc;ntr-o bomb",
+                    "url": "https://www.romaniatv.net/aer-conditionat-masina-extrem-de-periculos-sanatate-legatura-cancer-avort-spontan_357613.html",
+                    "urlToImage": "http://media.rtv.net/image/201705/full/aer_conditionat_38734300.jpg",
+                    "publishedAt": "2020-05-06T18:02:18Z",
+                    "content": "Vara bate la u, iar pe timpul zilelor caniculare, cei mai muli oameni folosesc în main aerul condiionat. Dei pare inofensiv, acesta poate fi foarte periculos pentru sntate. Conform cercetrilor, tabloul de bord al mainii, scaunele, AC, conductele, toate obiect… [+4764 chars]"
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Romaniatv.net"
+                    },
+                    "author": "",
+                    "title": "Colesterol mărit: când e nevoie de tratament medicamentos - RomaniaTV.net",
+                    "description": "&Icirc;n condițiile &icirc;n care măsurile ce țin de stilul de viață și de alimentație nu sunt suficiente pentru scăderea grăsimilor din s&acirc;nge, este nevoie de tratament medicamentos.",
+                    "url": "https://www.romaniatv.net/colesterol-marit-cand-e-nevoie-de-tratament-medicamentos_284817.html",
+                    "urlToImage": "http://media.rtv.net/image/201604/full/pastile_colesterol_69100000.jpg",
+                    "publishedAt": "2020-05-06T18:00:41Z",
+                    "content": "Este important de tiut c tratamentul dislipidemiei trebuie iniiat doar de medic, care stabilete când i ce fel de medicamente trebuie luate, în funcie de alte eventuale boli pe care le are pacientul.\r\nÎn general, se recomand o reevaluare la 3 luni dup începere… [+2798 chars]"
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Romaniatv.net"
+                    },
+                    "author": "",
+                    "title": "Nevrozele: De ce apar şi cum le gestionezi - RomaniaTV.net",
+                    "description": "Stresul cronic și amestecul zilnic de frustrare, frică, &icirc;ngrijorare pot duce la tulburări diverse, de la cea de anxietate la cea obsesiv-compulsivă sau la ipohondrie. Și pentru că toate acestea trebuiau să poarte un nume, li s-a spus nev",
+                    "url": "https://www.romaniatv.net/nevrozele-de-ce-apar-si-cum-le-gestionezi_371662.html",
+                    "urlToImage": "http://media.rtv.net/image/201708/full/nevrozele_09350500.jpg",
+                    "publishedAt": "2020-05-06T17:59:19Z",
+                    "content": "Spre deosebire de psihoz, ea nu genereaz pierderea contactului cu realul, iar persoana nevrotic rmâne, într-o mai mic sau mai mare msur, adaptat la viaa social. Totui, nevroza este resimit ca o povar grea pentru cei afectai.\r\nConflictele nerezolvate sau repri… [+2776 chars]"
+                },
+                {
+                    "source": {
+                        "id": null,
+                        "name": "Romaniatv.net"
+                    },
+                    "author": null,
+                    "title": "5 metode prin care se poate vindeca CANCERUL DE SÂN - RomaniaTV.net",
+                    "description": "Una din opt femei aparent sănătoasă este diagnosticată cu cancer mamar, iar dacă este descoperit la timp, cancerul de s&acirc;n are o rată de vindecare de 90%.",
+                    "url": "https://www.romaniatv.net/5-metode-prin-care-se-poate-vindeca-cancerul-de-san_381918.html",
+                    "urlToImage": "http://media.rtv.net/image/201710/full/cancer_san_38217300.jpg",
+                    "publishedAt": "2020-05-06T17:41:11Z",
+                    "content": "Medicii atrag atenia asupra a cinci aspecte importante care pot reduce riscul de boal i pot schimba cursul afeciunii spre vindecarea pe termen lung.\r\n1. Stilul de via. Fie c vorbim de diet dezechilibrat, de sedentarism, stres, consum de alcool sau de fumat, o… [+3941 chars]"
+                }
+            ];
+            const categories = [
+                { 'name': 'Home', 'link': 'index.html', 'current_link': false },
+                { 'name': 'Business', 'link': 'business.html', 'current_link': false },
+                { 'name': 'Entertainment', 'link': 'entertainment.html', 'current_link': false },
+                { 'name': 'Health', 'link': 'health.html', 'current_link': true },
+                { 'name': 'Science', 'link': 'science.html', 'current_link': false },
+                { 'name': 'Sports', 'link': 'sports.html', 'current_link': false },
+                { 'name': 'Technology', 'link': 'technology.html', 'current_link': false },
+            ];
+            populateCategories(categories);
+            populateArticles(articles);
+        }
+    </script>
+</body>
+
+</html>
