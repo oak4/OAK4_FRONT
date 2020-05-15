@@ -1,3 +1,10 @@
+<%@page import="java.io.InputStreamReader"%>
+<%@page import="java.io.BufferedReader"%>
+<%@page import="java.net.HttpURLConnection"%>
+<%@page import="java.net.URL"%>
+<%@page import="org.json.*"%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -278,15 +285,37 @@
                     "content": "Avocata Elenina Nicu contrazice interpretarea premierului Ludovic Orban, care a declarat joi c dup decizia Curii Constituionale amenzile pentru nerespectarea ordonanelor militare vor reveni la nivelul iniial, înainte de a fi majorate. Avocatul explic faptul c… [+3759 chars]"
                 }
             ];
-            const categories = [
-                { 'name': 'Home', 'link': 'index.html', 'current_link': true },
-                { 'name': 'Business', 'link': 'business.html', 'current_link': false },
-                { 'name': 'Entertainment', 'link': 'entertainment.html', 'current_link': false },
-                { 'name': 'Health', 'link': 'health.html', 'current_link': false },
-                { 'name': 'Science', 'link': 'science.html', 'current_link': false },
-                { 'name': 'Sports', 'link': 'sports.html', 'current_link': false },
-                { 'name': 'Technology', 'link': 'technology.html', 'current_link': false },
-            ];
+            <% 
+                URL obj = new URL("http://localhost:7001/OAK4_MID/webresources/entities.categorii");
+		HttpURLConnection con = (HttpURLConnection) obj.openConnection();
+		con.setRequestMethod("GET");
+		int responseCode = con.getResponseCode();
+		if (responseCode == HttpURLConnection.HTTP_OK) { // success
+			BufferedReader in = new BufferedReader(new InputStreamReader(
+					con.getInputStream()));
+			String inputLine;
+			StringBuffer res = new StringBuffer();
+
+			while ((inputLine = in.readLine()) != null) {
+				res.append(inputLine);
+			}
+			in.close();
+                        JSONObject json = XML.toJSONObject(res.toString());
+                        String jsonPrettyPrintString = json.toString(4);
+                        out.println("const catReq = ");
+                        out.println(jsonPrettyPrintString);
+                        out.println(";const categories =[{ 'nume': 'Home', 'categorieId': '', 'status': {} }].concat( catReq['categoriis']['categorii']);");
+		}
+        %>
+//            const categories = [
+//                { 'name': 'Home', 'link': 'index.html', 'current_link': true },
+//                { 'name': 'Business', 'link': 'business.html', 'current_link': false },
+//                { 'name': 'Entertainment', 'link': 'entertainment.html', 'current_link': false },
+//                { 'name': 'Health', 'link': 'health.html', 'current_link': false },
+//                { 'name': 'Science', 'link': 'science.html', 'current_link': false },
+//                { 'name': 'Sports', 'link': 'sports.html', 'current_link': false },
+//                { 'name': 'Technology', 'link': 'technology.html', 'current_link': false },
+//            ];
             populateCategories(categories);
             populateArticles(articles);
         }

@@ -73,8 +73,10 @@ const populateCategories = (categories) => {
     const nav = document.getElementById('navbar');
     Array.from(categories).forEach(
         (category) => {
-            const anchor = anchorNode(category.link, category.name, category.current_link);
-            nav.appendChild(anchor);
+           // const anchor = anchorNode(category.link, category.name, category.current_link);
+        const anchor = anchorNode("", category.nume, false);
+                
+        nav.appendChild(anchor);
         }
     )
 };
